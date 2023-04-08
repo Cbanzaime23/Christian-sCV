@@ -38,7 +38,7 @@
     <ul>
       <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JR97GN8H8K8C">Python for Everybody by University of Michigan on Coursera</a></li>
       <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LTXNXRQLEYAL">Python 3 Programming by University of Michigan on Coursera</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/49ZSCNWQXGJ6">Experimental Design Basics by Arizona State University on Coursera</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/49ZSCNWQXGJ6">Data Analysis and Presentation Skills: The PwC Approach</a></li>
     </ul>
 
   <h2>Skills</h2>
