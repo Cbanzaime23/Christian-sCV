@@ -22,8 +22,8 @@
         <h1>Christian Ibañez</h1>
         <p><em>Data Scientist at <strong>Teleperformance Philippines</strong></em></p>
 
-        <p>Chistian is a Business Analytics Specialist/Data Scientist (Manager Level/Individual Contributor) at Teleperformance Ph delivering different analytics solutions from Descriptive, Diagnostic to Predictive Analytics using PowerBI, R, and Python.</p>
-        <p>He previously worked at PwC as Data Analyst and Automation Developer, delivering Analytics and Automation solutions using Tableau, Power BI, Alteryx, Excel VBA and UiPath.</p>
+        <p>Chistian is a Business Analytics Specialist/Data Scientist (Manager Level/Individual Contributor) at Teleperformance PH delivering different analytics solutions from Descriptive, Diagnostic to Predictive Analytics using PowerBI, R, and Python.</p>
+        <p>He previously worked at PwC Acceleration Centre Manila as Data Analyst and Automation Developer, delivering Analytics/Reporting and Automation solutions using Tableau, Power BI, Alteryx, Excel VBA and UiPath.</p>
         <p>Since 2019 he was being invited by different Universities and Colleges to talk about Data Science and Automation Development.</p>
 
         <a href="https://www.linkedin.com/in/ibanezchristian/">Linkedin Profile</a>
@@ -36,9 +36,9 @@
   <h2>Certifications</h2>
   <p>Completed Coursera Specializations</p>
     <ul>
-      <li><a href="https://coursera.org/share/f3c301db8f0d0da86776d3a22973bd5b">Python for Everybody by University of Michigan on Coursera</a></li>
-      <li><a href="https://coursera.org/share/a4279e6612bcc8d380605fffaadff0ce">Python 3 Programming by University of Michigan on Coursera</a></li>
-      <li><a href="https://coursera.org/share/5a7c39fff7542b83563c03bb7ca2f5c9">Experimental Design Basics by Arizona State University on Coursera</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JR97GN8H8K8C">Python for Everybody by University of Michigan on Coursera</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LTXNXRQLEYAL">Python 3 Programming by University of Michigan on Coursera</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/49ZSCNWQXGJ6">Experimental Design Basics by Arizona State University on Coursera</a></li>
     </ul>
 
   <h2>Skills</h2>
@@ -55,12 +55,12 @@
       </tr>
 
       <tr>
-        <td>Exploratory Data Analysis/ Statistical Analysis in R, Python and Excel</td>
+        <td>Exploratory Data Analysis/ Statistical Analysis in R, Python and Excel. From raw data to insigts and recommendation</td>
         <td>⭐⭐⭐⭐</td>
       </tr>
 
       <tr>
-        <td>Building Machine Learning Solution for Supervised Problems in Python</td>
+        <td>Building Machine Learning Solution for Supervised Problems in Python and R</td>
         <td>⭐⭐⭐</td>
       </tr>
 
@@ -114,7 +114,8 @@
   <h2>Projects</h2>
     <ul>
       <li>Exploratory Data Analysis of Repeat Chat Transactions for an Entertainment Production Company</li>
-      <li>Building of Attrition Early Warning System for the Agents working for an Insurance Company</li>
+      <li>Building of Attrition Early Warning System for the Agents for clients Insurance, Healthcare and Travel Industry. From Raw Data, to Insights and the actual system that predicts the likelyhood of Agents to Attrite in the next couple months</li>
+      <li>Exploratory and Diagnotic Analysis for different clients that aims to address the causal factors of different metrics(CSAT, Attrition, Repeat Call Rate, etc) in order for the client to have informed decision on improving those metrics</li>
       <li>Building of Automated Reporting Systems for WFM that significantly reduces the report creation from 3 Hours to 15 Minutes on a Daily Basis</li>
     </ul>
 
