@@ -1,6 +1,6 @@
 
 body{
-    font-family: Arial;
+    font-family: serif;
     margin: 0; 
     padding: 0; 
     background-color: #F1E3D3; 
@@ -14,10 +14,13 @@ header{
     color: #fff; 
     padding: 10px 0; 
     text-align: center;
+    font-family: serif;
 }
 
 footer{
-    text-align: center
+    text-align: center;
+    background-color: #690B22; 
+    color: #fff; 
   }
 
 section{
@@ -26,4 +29,5 @@ section{
 
 h2 {
     color: #1B4D3E;
+    font-family: "Times New Roman";
     }
