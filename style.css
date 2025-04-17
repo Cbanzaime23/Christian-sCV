@@ -1,6 +1,6 @@
 
 body{
-    font-family: serif;
+    font-family: monospace;
     margin: 0; 
     padding: 0; 
     background-color: #F1E3D3; 
@@ -31,3 +31,11 @@ h2 {
     color: #1B4D3E;
     font-family: "Times New Roman";
     }
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
