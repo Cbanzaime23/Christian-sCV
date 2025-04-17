@@ -3,15 +3,14 @@ body{
     font-family: monospace;
     margin: 0; 
     padding: 0; 
-    background-color: #F1E3D3; 
     color: #333; 
     line-height: 1.6;
 
 }
 
 header{
-    background-color: #690B22; 
-    color: #fff; 
+    background-color:  #fff; 
+    color: #690B22;
     padding: 10px 0; 
     text-align: center;
     font-family: serif;
@@ -28,7 +27,7 @@ section{
 }
 
 h2 {
-    color: #1B4D3E;
+    color: #690B22;
     font-family: "Times New Roman";
     }
 
