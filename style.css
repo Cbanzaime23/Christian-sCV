@@ -3,14 +3,14 @@ body{
     font-family: monospace;
     margin: 0; 
     padding: 0; 
-    color: #333; 
+    color: #1D1616; 
     line-height: 1.6;
 
 }
 
 header{
-    background-color:  #fff; 
-    color: #690B22;
+    background-color:  #EEEEEE; 
+    color: #1D1616;
     padding: 10px 0; 
     text-align: center;
     font-family: serif;
@@ -18,8 +18,8 @@ header{
 
 footer{
     text-align: center;
-    background-color: #690B22; 
-    color: #fff; 
+    background-color: #EEEEEE;
+    color: #1D1616; 
   }
 
 section{
@@ -27,8 +27,11 @@ section{
 }
 
 h2 {
-    color: #690B22;
-    font-family: "Times New Roman";
+    color: #8E1616;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     }
 
 h1 {
@@ -38,3 +41,7 @@ h1 {
     font-style: normal;
   }
 
+th{
+    color: #1D1616;
+    font-size: 15px;
+}
