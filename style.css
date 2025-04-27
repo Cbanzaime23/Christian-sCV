@@ -1,4 +1,11 @@
 
+#DP{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: #1D1616;
+}
+
 body{
     font-family: monospace;
     margin: 0px; 
