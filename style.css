@@ -112,8 +112,8 @@ hr {
     padding-left: 20px;
     padding-bottom: 20px;
 }
-.entry {
-}
+
+
 .entry-dot {
     position: absolute;
     top: 0px;
@@ -126,9 +126,9 @@ hr {
 }
 .timespan {
     grid-column: span 1;
-    font-size: 14px;
+    font-size: 10px;
     text-align: right;
-    padding-right: 5px;
+    padding-right: 10px;
     color: #bbb;
 }
 .hassets {
@@ -246,3 +246,4 @@ hr {
     list-style-type: none;
     padding-left: 0;
 }
+
