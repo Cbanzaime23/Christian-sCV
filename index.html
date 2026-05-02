@@ -3,18 +3,41 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Christian Ibañez's Personal Website">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Data Science, Engineering">
+  <meta name="description"
+    content="Christian Ibañez — Data Scientist & Data Engineer specializing in Statistics, Mathematical Optimization, AI, and Machine Learning.">
+  <meta name="keywords" content="Data Science, Data Engineering, Machine Learning, Statistics, Python, Tableau, ETL">
   <meta name="author" content="Christian Ibañez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Christian B. Ibañez</title>
+
+  <!-- Google Fonts: Lato (primary) + Roboto Mono (code) — DataCamp typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <!-- External stylesheet for consistent styling -->
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  <!-- ================================
+       STICKY NAVIGATION
+       ================================ -->
+  <nav class="site-nav" id="site-nav">
+    <ul>
+      <li><a href="#dhead">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#talks">Talks</a></li>
+    </ul>
+  </nav>
+
   <!-- ================================
        HEADER SECTION
        ================================ -->
@@ -26,7 +49,9 @@
       </div>
       <div id="ddesc">
         <h1>Christian B. Ibañez</h1>
-        <h2>A Data Scientist and Data Engineer with a deep interest in applying Statistics and Mathematical Optimization to solve real-world problems</h2>
+        <h2>Data Scientist and Data Engineer specializing in Statistics, Mathematical Optimization,
+          AI, and Machine Learning — turning complex data into actionable insights and measurable business outcomes.
+        </h2>
         <div id="dico">
           <!-- Add aria-label for screen readers -->
           <a href="https://github.com/Cbanzaime23" aria-label="GitHub">
@@ -48,9 +73,9 @@
        PROFESSIONAL EXPERIENCE SECTION
        ================================ -->
   <section class="container" id="experience">
-    <h1>Professional Experiences</h1>
+    <h2 class="section-title">Professional Experiences</h2>
 
-    <!-- Experience Entry -->
+    <!-- Sun Life -->
     <div class="entry row">
       <div class="timespan">2024 - Present</div>
       <div class="ico">
@@ -60,12 +85,26 @@
       <div class="desc">
         <strong>Data Scientist/Process Architect - </strong> Sun Life Global Solutions Philippines, BGC - Taguig City
         <ul>
-          <li>Applied Queueing Theory to analyze client/advisor queues in Client Service Centre, producing cost-benefit analysis and system design recommendations.</li>
-          <li>Migrated Agile Footprint reporting from manual Excel to Tableau, reducing preparation time from 32 hours to 30 minutes/month (98% time saved).</li>
-          <li>Conducted PowerQuery workshops to improve data quality and streamline Excel-heavy tasks.</li>
+          <li>Developed an ETL data pipeline that maintains the knowledge base of a RAG AI Agent (MS365 Copilot)
+            for PMO, enabling automated portfolio audits and analysis on a weekly cadence.</li>
+          <li>Built multiple ETL pipelines (Python, batch script, PowerShell, Power Automate), eliminating
+            5 hours of manual work per week across PMO and PCQA and generates 100% data accuracy and availability
+            of data.</li>
+          <li>Assessed the business value of Tableau dashboards deployed across multiple BU operations,
+            uncovering that most dashboards underperformed expectations due to data-quality gaps and
+            unmet SLA requirements.</li>
+          <li>Applied Queueing Theory to evaluate the feasibility of a queue-management system for
+            client/advisor flows in the Client Service Centre.</li>
+          <li>Migrated Agile Footprint reporting from manual Excel to Tableau with PowerQuery as the backend,
+            reducing preparation time from 32 hours to 30 minutes per month (98% time saved) and generates 95% accurate
+            data.</li>
+          <li>Conducted PowerQuery workshops to improve data quality awareness and streamline Excel-heavy
+            processes across PMO, PCQA and Agile teams.</li>
         </ul>
         <p><em>Trainings:</em></p>
         <ul>
+          <li>PM Bootcamp with Generative AI Application</li>
+          <li>7 Habits of Highly Effective people</li>
           <li>Excel Power Query Beginner to Advanced (Udemy)</li>
           <li>Project Management Fundamentals (PMI)</li>
           <li>Data Storytelling for Business (StoryIQ)</li>
@@ -73,18 +112,24 @@
       </div>
     </div>
 
+    <!-- Teleperformance -->
     <div class="entry row">
       <div class="timespan">2021 - 2024</div>
       <div class="ico">
         <div class="entry-dot"></div>
-        <img src="./images/teleperformance_logo.jfif" alt="Sun Life Logo">
+        <img src="./images/teleperformance_logo.jfif" alt="Teleperformance Logo">
       </div>
       <div class="desc">
-        <strong>Data Scientist/Business Analytics Manager - </strong> Teleperformance Philippines, EDSA Greenfield District - Mandaluyong City
+        <strong>Data Scientist/Business Analytics Manager - </strong> Teleperformance Philippines, EDSA Greenfield
+        District - Mandaluyong City
         <ul>
-          <li>Designed and deployed a Sales Retention Scoring Model for a FMCG Account to improve customer retention. In the first 3 months of implementation, it contributed 5% of revenue or around 2 Million pesos. </li>
-          <li>Exploratory Data Analysis of Repeat Chat Transactions for an Entertainment Production Company. Highlighting the majority of the Transactions that drivese the Repeat Chat Transactions</li>
-          <li>Building and deploying an Predictive Employee Attrition Early Warning System(Batch Prediction) for the Healthcare, BFSI and Travel Accounts. This project helped the Accounts answers the question of Who to Coach and What to Coach based on Attrition Predictive Model. This attrition improvement projects leads to 2%-3% monthly Attrition Reduction and equvalent to 2 Million + Euros of savings</li>
+          <li>Designed and deployed a Sales Retention Scoring Model for an FMCG account, contributing 5% of
+            revenue (~₱2 M) within the first three months of implementation.</li>
+          <li>Conducted exploratory data analysis on repeat chat transactions for an entertainment production
+            company, identifying the key transaction types driving repeat contacts.</li>
+          <li>Built and deployed a Predictive Employee Attrition Early Warning System (batch prediction) across
+            healthcare, BFSI, and travel accounts — enabling targeted coaching recommendations (who to coach,
+            what to coach) and achieving 2–3% monthly attrition reduction, equivalent to €2 M+ in savings.</li>
         </ul>
         <p><em>Trainings:</em></p>
         <ul>
@@ -94,42 +139,46 @@
       </div>
     </div>
 
+    <!-- PwC -->
     <div class="entry row">
       <div class="timespan">2018 - 2021</div>
       <div class="ico">
         <div class="entry-dot"></div>
-        <img src="./images/PricewaterhouseCoopers.png" alt="Sun Life Logo">
+        <img src="./images/PricewaterhouseCoopers.png" alt="PwC Logo">
       </div>
       <div class="desc">
-        <strong> Data Analysis and Visualization Analyst  - </strong> PricewaterhouseCoopers Service Delivery Centre, Rockwell Business Centre - Pasig City
+        <strong>Data Analysis and Visualization Analyst - </strong> PricewaterhouseCoopers Service Delivery Centre,
+        Rockwell Business Centre - Pasig City
         <ul>
-          <li>Developed an Automated Reporting Systems for WorkForce Management that significantly reduces the Centre Wide Productivity Report creation from 3 Hours to 15 Minutes on a daily basis using Alteryx and PowerBI</li>
-          <li>Deployed Excel VBA solution to speed up data preprocessing and auditing process in HR, Learning and Development and R&Q</li>
-          <li>One of the pioneers of Data Analytics and Visualization Squad, the first squad to do chargeable work by delivering VBA, Alteryx and PowerBI Solutions in HK,SG and AU.</li>
+          <li>Developed an Automated Reporting System for WorkForce Management that significantly reduces the Centre
+            Wide Productivity Report creation (an excel heavy task with 10 - 15 data sources) from 3 Hours to 15 Minutes
+            on a daily basis using Alteryx and PowerBI</li>
+          <li>Deployed Excel VBA solution to speed up data preprocessing/reporting and auditing process in HR, Learning
+            and
+            Development and R&Q</li>
+          <li>One of the pioneers of Data Analytics and Visualization delivery team, the first team to do chargeable
+            work by
+            delivering VBA, Alteryx and PowerBI Solutions in HK, SG and AU.</li>
           <li>Promoted to Analyst role from Associate role (2020)</li>
-          <li>Absorbed from Contractual to FTE (2018)</li>
+          <li>Transitioned from Contractual to FTE (2018)</li>
         </ul>
         <p><em>Trainings:</em></p>
         <ul>
           <li>Alteryx Designer Core Certified (2019)</li>
+          <li>DOST-Coursera Grant (2020)</li>
           <li>DOST-Coursera Grant (2018)</li>
         </ul>
       </div>
     </div>
-    <!-- Repeat the same structure for other job entries (Teleperformance, PwC) -->
-    <!-- Keep entries consistent for easy maintenance -->
   </section>
 
-  <br>
-  <hr>
-  <br>
-  
   <!-- ================================
        INTERNSHIP SECTION
        ================================ -->
   <section class="container" id="internships">
-    <h1>Internships</h1>
-    <!-- Example internship -->
+    <h2 class="section-title">Internships</h2>
+
+    <!-- Toyota -->
     <div class="entry row">
       <div class="timespan">2016</div>
       <div class="ico">
@@ -140,11 +189,13 @@
         <strong>Toyota Makati Inc.</strong>
         <p>Kaizen Intern (320 Hours)</p>
         <ul>
-          <li>Applied Toyota Business Practice framework, process mapping, and data analysis to improve Parts Department warehouse operations.</li>
+          <li>Applied Toyota Business Practice framework, process mapping, and data analysis to improve Parts Department
+            warehouse operations.</li>
         </ul>
       </div>
     </div>
-    <!-- Repeat for Sandugo, VST ECS -->
+
+    <!-- Sandugo -->
     <div class="entry row">
       <div class="timespan">2015</div>
       <div class="ico">
@@ -153,12 +204,17 @@
       </div>
       <div class="desc">
         <strong>Khumbu Enterprise Inc.</strong>
-        <p>Work Study Practioner - Intern (300 Hours)</p>
+        <p>Work Study Practitioner - Intern (300 Hours)</p>
         <ul>
-          <li>Conducted time and motion study under Merchandising Department’s logistics warehouse to evaluate their staffing needs and their current method of work. Highlighted some considered non-value activities in the process and presented to the manager the output of the improved process versus the output of the current process..</li>
+          <li>Conducted time and motion study under Merchandising Department's logistics warehouse to evaluate their
+            staffing needs and their current method of work. Highlighted some considered non-value activities in the
+            process and presented to the manager the output of the improved process versus the output of the current
+            process.</li>
         </ul>
       </div>
     </div>
+
+    <!-- VST ECS -->
     <div class="entry row">
       <div class="timespan">2015</div>
       <div class="ico">
@@ -167,25 +223,24 @@
       </div>
       <div class="desc">
         <strong>VST ECS Phils., Inc.</strong>
-        <p>Work Study Practioner - Intern (72 Hours)</p>
+        <p>Work Study Practitioner - Intern (72 Hours)</p>
         <ul>
-          <li>Created a detailed documentation of the process flow in the provincial shipping section of the warehouse to be use for process standardization.</li>
+          <li>Created a detailed documentation of the process flow in the provincial shipping section of the warehouse
+            to be used for process standardization.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <br>
-  <hr>
-  <br>
-
   <!-- ================================
        EDUCATION SECTION
        ================================ -->
   <section class="container" id="education">
-    <h1>Education</h1>
+    <h2 class="section-title">Education</h2>
+
+    <!-- Masters -->
     <div class="entry row">
-      <div class="timespan">2012 - 2017</div>
+      <div class="timespan">2017 - 2019</div>
       <div class="ico">
         <div class="entry-dot"></div>
         <img src="./images/Polytechnic_University_of_the_Philippines.svg.png" alt="PUP Logo">
@@ -194,14 +249,16 @@
         <strong>Polytechnic University of the Philippines - Sta. Mesa, Manila</strong>
         <p>Master of Science in Engineering, Major in Computer Engineering (Discontinued)</p>
         <ul>
-          <li>(15 Units Earned, Discontinued)November 2017 – March 2019</li>
-          <li>DOST-PCIEERD’s Data, Connectivity and Intelligence: Data Science Track Scholar 2017 Recipient- (October 2017 – April 2018, July 2018 – February 2019)</li>
+          <li>(15 Units Earned, Discontinued) November 2017 – March 2019</li>
+          <li>DOST-PCIEERD's Data, Connectivity and Intelligence: Data Science Track Scholar 2017 Recipient (October
+            2017 – April 2018, July 2018 – February 2019)</li>
         </ul>
       </div>
     </div>
-    <!-- Masters, Post-baccalaureate entries can follow the same format -->
+
+    <!-- Post-baccalaureate -->
     <div class="entry row">
-      <div class="timespan">2012 - 2017</div>
+      <div class="timespan">2017 - 2019</div>
       <div class="ico">
         <div class="entry-dot"></div>
         <img src="./images/Polytechnic_University_of_the_Philippines.svg.png" alt="PUP Logo">
@@ -210,10 +267,12 @@
         <strong>Polytechnic University of the Philippines - Sta. Mesa, Manila</strong>
         <p>Post Baccalaureate Diploma in Information Technology (Discontinued)</p>
         <ul>
-          <li>(9 Units Earned in parallel with my Masters) November 2017 – March 2019</li>
+          <li>(9 Units Earned in parallel with Masters) November 2017 – March 2019</li>
         </ul>
       </div>
     </div>
+
+    <!-- BS IE -->
     <div class="entry row">
       <div class="timespan">2012 - 2017</div>
       <div class="ico">
@@ -232,81 +291,195 @@
     </div>
   </section>
 
-  <br>
-  <hr>
-  <br>
-
   <!-- ================================
-       COURSES SECTION
+       COURSES & CERTIFICATIONS SECTION
        ================================ -->
   <section class="container" id="courses">
-    <h1>Courses & Certifications</h1>
-    <ul>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/49PB7E6Z27CZ">Analyze Datasets and Train ML Models using AutoML</a> (Coursera)</li>
-      <li><a href="https://www.coursera.org/account/accomplishments/verify/WH9FNKEFZAXE">Build, Train, and Deploy ML Pipelines using BERT</a> (Coursera)</li>
-      <li><a href="https://coursera.org/share/f3c301db8f0d0da86776d3a22973bd5b">Python for Everybody</a> (Coursera Specialization)</li>
-      <li><a href="https://coursera.org/share/a4279e6612bcc8d380605fffaadff0ce">Python 3 Programming</a> (Coursera Specialization)</li>
-      <li><a href="https://coursera.org/share/5a7c39fff7542b83563c03bb7ca2f5c9">Experimental Design Basics</a> (Coursera Course)</li>
-      <li><a href="https://www.coursera.org/account/accomplishments/specialization/BWT4R2XXXDYN">Data Science: Foundation using R</a> (Coursera Specialization)</li>
-      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/49ZSCNWQXGJ6">Data Analysis and Presentation Skills: the PwC Approach</a> (Coursera Specialization)</li>
-      <li><a href="https://www.udemy.com/certificate/UC-e792de8f-dd7c-4148-b1b2-eb61a1cb3396/">Python for Time Series Data Analysis</a> (Udemy Course)</li>
-      <!-- Keep list items consistent -->
-    </ul>
+    <h2 class="section-title">Courses & Certifications</h2>
+    <div class="skill-cards">
+      <div class="skill-card">
+        <h3>Machine Learning & AI</h3>
+        <ul>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/49PB7E6Z27CZ">Analyze Datasets and Train
+              ML Models using AutoML</a> — Coursera</li>
+          <li><a href="https://www.coursera.org/account/accomplishments/verify/WH9FNKEFZAXE">Build, Train, and Deploy ML
+              Pipelines using BERT</a> — Coursera</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Python Programming</h3>
+        <ul>
+          <li><a href="https://coursera.org/share/f3c301db8f0d0da86776d3a22973bd5b">Python for Everybody</a> — Coursera
+            Specialization</li>
+          <li><a href="https://coursera.org/share/a4279e6612bcc8d380605fffaadff0ce">Python 3 Programming</a> — Coursera
+            Specialization</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Data Science & Statistics</h3>
+        <ul>
+          <li><a href="https://coursera.org/share/5a7c39fff7542b83563c03bb7ca2f5c9">Experimental Design Basics</a> —
+            Coursera</li>
+          <li><a href="https://www.coursera.org/account/accomplishments/specialization/BWT4R2XXXDYN">Data Science:
+              Foundation using R</a> — Coursera Specialization</li>
+          <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/49ZSCNWQXGJ6">Data
+              Analysis and Presentation Skills: the PwC Approach</a> — Coursera Specialization</li>
+          <li><a href="https://www.udemy.com/certificate/UC-e792de8f-dd7c-4148-b1b2-eb61a1cb3396/">Python for Time
+              Series Data Analysis</a> — Udemy</li>
+        </ul>
+      </div>
+    </div>
   </section>
-
-  <br>
-  <hr>
-  <br>
 
   <!-- ================================
        SKILLS SECTION
        ================================ -->
   <section class="container" id="skills">
-    <h1>Skills</h1>
-    <ul>
-      <li>Excel (VBA, PowerQuery, DAX) & Automated Reporting</li>
-      <li>Data Wrangling & ETL (Pandas, NumPy, SQL)</li>
-      <li>Statistical Analysis & EDA (Python, R, Minitab, Excel)</li>
-      <li>Machine Learning (Regression, Classification in Python)</li>
-      <li>Data Visualization (Tableau, Power BI)</li>
-    </ul>
-  </section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-cards">
+      <div class="skill-card">
+        <h3>Data Engineering</h3>
+        <ul>
+          <li>Data Extraction using API, Database Systems and Web Scraping (Python)</li>
+          <li>SQL Scripting & Database Querying</li>
+          <li>ETL Data Pipeline Development with Python(Pandas, Polars), Batch Scripting and Powershell</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>AI and Machine Learning</h3>
+        <ul>
+          <li>Regression & Classification Modeling (Python, R)</li>
+          <li>Predictive and Prescriptive Analysis</li>
+          <li>Model Training and Evaluation</li>
+          <li>Time Series Analysis</li>
+          <li>Survival Analysis</li>
+          <li>Machine Learning/Statistical Inference for Business Insights</li>
+          <li>Model interpretability and explainability using SHAP and LIME</li>
+          <li>Using AutoML to speed up model training and evaluation (pyCaret, AutoGluon)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Analytics & Visualization</h3>
+        <ul>
+          <li>Statistical Analysis/Hypothesis Testing & EDA (Python, R, Excel, LLM for data analysis)</li>
+          <li>Queueing Theory and Simulation (R, Python, Excel)</li>
+          <li>Optimization Modelling using Minizinc, Solver, R, Python</li>
+          <li>Design of Experiments and A/B Testing (Python, R, Excel, Minitab)</li>
+          <li>Using LLM for Data Analysis and Visualization</li>
+          <li>Dashboard Development and Visualization with Tableau, Power BI, D3.js</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Automation</h3>
+        <ul>
+          <li>Excel VBA</li>
+          <li>PowerQuery & DAX</li>
+          <li>Power Automate</li>
+          <li>Python Scripting for automation</li>
+          <li>Using LLM for Workflow automation and data analysis</li>
 
-  <br>
-  <hr>
-  <br>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+
+
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- ================================
        TALKS & SEMINARS SECTION
        ================================ -->
   <section class="container" id="talks">
-    <h1>Talks, Technical Seminars & Panelist Roles</h1>
-    <ol>
-      <li><strong>IEAC 2025 Alumni Guest Speaker</strong> | PUP Sta. Mesa - Industrial Engineering Department (June 2025)</li>
-      <li><strong>IE4DS: IE’s Competitive Advantage, Challenges and Opportunities for IEs in Data Science</strong> | PUP Sta. Mesa - Industrial Engineering Department (July 2023)</li>
-      <li><strong>Getting started with Data Analytics </strong> | Asia Technological School of Science and Arts – College of Engineering and Information Technology Education  (December 2022)</li>
-      <li><strong>Knowledged IEndustries: Upskilling for a Data Science Job as an IE Student </strong> | PIIE LPU Cavite  (February 2022)</li>
-      <li><strong>Data Mining: Process, Concept and Tools </strong> | PUP ACCESS - Computer Engineering Department  (September 2021)</li>
-      <li><strong>Prescriptive Analytics: Excel, R and Python for Solving Linear Programming Problems </strong> | PIIE LPU Cavite Student Chapter (June 2021)</li>
-      <li><strong>IE As a Data Analyst and Automation Developer </strong> | Industrial Engineering Department Quezon City University (February 2021)</li>
-      <li><strong>Solving Real World Problems in OR </strong> | Industrial Engineering Department Quezon City University (November 2020)</li>
-      <li><strong>Excel Beyond the Basics(Advanced Formulas, Data Analysis, Solver, VBA) </strong> | Industrial Engineering Department TIP-QC (September 2020)</li>
-      <li><strong>Automation with Excel VBA </strong> | ALPHA TV Webinar | Ask Lex PH Academy (May 2020)</li>
-      <li><strong>Data Analysis and Visualization </strong> | Industrial Engineering Annual Convention 2020 | PIIE PUP Sta. Mesa (February 2020)</li>
-      <li><strong>Optimization: From Data Science and Operations Research </strong> | Industrial Engineering Symposium 2020 | IE Department | PUP Binan Campus  PIIE PUP Sta. Mesa (February 2020)</li>
-      <li><strong>Introduction to Data Science and Machine Learning with Python </strong> | ECE Special Leacture Series 2020 | ECE Department, PUP Sta Rosa Campus(February 2020)</li>
-      <li><strong>Prescriptive Analytics: Simulation using Excel's What-if Analysis  </strong> | IEshikawa 14 by UP-CIEM | University of the Philippines - Diliman (November 2019)</li>
-      <li><strong>Move Forward in AI:OR in AI </strong> | ORSP-UST Chapter| University of Sto. Tomas (November 2019)</li>
-      <li><strong>Research Panelist, Science Research Fair and Congress 2019 </strong> | Antipolo City National Science and Technology Highschool (March 2019)</li>
-      <!-- Shorten titles but keep strong keywords -->
-    </ol>
+    <h2 class="section-title">Talks, Technical Seminars & Panelist Roles</h2>
+
+    <!-- 2025 -->
+    <div class="talks-year-group">
+      <h3 class="year-heading">2025</h3>
+      <ul class="talks-list">
+        <li><strong>IEAC 2025 Alumni Guest Speaker</strong> — PUP Sta. Mesa, Industrial Engineering Department (June
+          2025)</li>
+      </ul>
+    </div>
+
+    <!-- 2023 -->
+    <div class="talks-year-group">
+      <h3 class="year-heading">2023</h3>
+      <ul class="talks-list">
+        <li><strong>IE4DS: IE's Competitive Advantage, Challenges and Opportunities for IEs in Data Science</strong> —
+          PUP Sta. Mesa, Industrial Engineering Department (July 2023)</li>
+      </ul>
+    </div>
+
+    <!-- 2022 -->
+    <div class="talks-year-group">
+      <h3 class="year-heading">2022</h3>
+      <ul class="talks-list">
+        <li><strong>Getting Started with Data Analytics</strong> — Asia Technological School of Science and Arts,
+          College of Engineering and IT Education (December 2022)</li>
+        <li><strong>Knowledged IEndustries: Upskilling for a Data Science Job as an IE Student</strong> — PIIE LPU
+          Cavite (February 2022)</li>
+      </ul>
+    </div>
+
+    <!-- 2021 -->
+    <div class="talks-year-group">
+      <h3 class="year-heading">2021</h3>
+      <ul class="talks-list">
+        <li><strong>Data Mining: Process, Concept and Tools</strong> — PUP ACCESS, Computer Engineering Department
+          (September 2021)</li>
+        <li><strong>Prescriptive Analytics: Excel, R and Python for Solving Linear Programming Problems</strong> — PIIE
+          LPU Cavite Student Chapter (June 2021)</li>
+        <li><strong>IE As a Data Analyst and Automation Developer</strong> — Industrial Engineering Department, Quezon
+          City University (February 2021)</li>
+      </ul>
+    </div>
+
+    <!-- 2020 -->
+    <div class="talks-year-group">
+      <h3 class="year-heading">2020</h3>
+      <ul class="talks-list">
+        <li><strong>Solving Real World Problems in OR</strong> — Industrial Engineering Department, Quezon City
+          University (November 2020)</li>
+        <li><strong>Excel Beyond the Basics (Advanced Formulas, Data Analysis, Solver, VBA)</strong> — Industrial
+          Engineering Department, TIP-QC (September 2020)</li>
+        <li><strong>Automation with Excel VBA</strong> — ALPHA TV Webinar | Ask Lex PH Academy (May 2020)</li>
+        <li><strong>Data Analysis and Visualization</strong> — Industrial Engineering Annual Convention 2020 | PIIE PUP
+          Sta. Mesa (February 2020)</li>
+        <li><strong>Optimization: From Data Science and Operations Research</strong> — Industrial Engineering Symposium
+          2020 | IE Department, PUP Biñan Campus (February 2020)</li>
+        <li><strong>Introduction to Data Science and Machine Learning with Python</strong> — ECE Special Lecture Series
+          2020 | ECE Department, PUP Sta. Rosa Campus (February 2020)</li>
+      </ul>
+    </div>
+
+    <!-- 2019 -->
+    <div class="talks-year-group">
+      <h3 class="year-heading">2019</h3>
+      <ul class="talks-list">
+        <li><strong>Prescriptive Analytics: Simulation using Excel's What-if Analysis</strong> — IEshikawa 14 by UP-CIEM
+          | University of the Philippines - Diliman (November 2019)</li>
+        <li><strong>Move Forward in AI: OR in AI</strong> — ORSP-UST Chapter | University of Sto. Tomas (November 2019)
+        </li>
+        <li><strong>Research Panelist, Science Research Fair and Congress 2019</strong> — Antipolo City National Science
+          and Technology High School (March 2019)</li>
+      </ul>
+    </div>
   </section>
 
   <!-- ================================
        FOOTER SECTION
        ================================ -->
   <footer>
-    <p>© 2025 Christian Ibañez</p>
+    <p><em>"The fear of the LORD is the beginning of knowledge, but fools despise wisdom and instruction."</em><br>
+      — Proverbs 1:7 (NIV)</p>
+    <p>&copy; 2026 Christian Ibañez · Built with HTML &amp; CSS · Powered by "the grace of God"</p>
   </footer>
 </body>
 
