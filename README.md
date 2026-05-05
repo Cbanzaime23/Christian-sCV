@@ -1,130 +1,42 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+# Christian B. Ibañez — Portfolio
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Christian Ibañez's Personal Website">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Christian Ibanez">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Welcome to the repository for my personal portfolio website. 
 
-  <title>Christian Ibañez</title>
-</head>
+I am a **Data Scientist and Data Engineer** specializing in Statistics, Mathematical Optimization, AI, and Machine Learning. I focus on turning complex data into actionable insights and measurable business outcomes.
 
-<body>
+You can view the live site here (insert link if applicable), or clone this repository to view the HTML/CSS source code.
 
-  <table cellspacing = "20">
-    <tr>
-      <td>
-        <img src="images/Linkedin DP.png" alt="Christian's Linkedin DP",width="150" height="200">
-      </td>
-      <td>
-        <h1>Christian Ibañez</h1>
-        <p><em>Data Scientist at <strong>Teleperformance Philippines</strong></em></p>
+## 💼 Professional Experience
 
-        <p>Chistian is a Business Analytics Specialist/Data Scientist (Manager Level/Individual Contributor) at Teleperformance PH delivering different analytics solutions from Descriptive, Diagnostic to Predictive Analytics using PowerBI, R, and Python.</p>
-        <p>He previously worked at PwC Acceleration Centre Manila as Data Analyst and Automation Developer, delivering Analytics/Reporting and Automation solutions using Tableau, Power BI, Alteryx, Excel VBA and UiPath.</p>
-        <p>Since 2019 he was being invited by different Universities and Colleges to talk about Data Science and Automation Development.</p>
+*   **Sun Life** — IT Manager, Data Science (2024 - Present)
+*   **Teleperformance Philippines** — Data Scientist / Business Analytics Specialist (2021 - 2024)
+*   **PricewaterhouseCoopers (PwC) Service Delivery Centre Manila** — Data Analyst and Automation Developer (2018 - 2021)
 
-        <a href="https://www.linkedin.com/in/ibanezchristian/">Linkedin Profile</a>
-      </td>
-    </tr>
-  </table>
+## 🛠️ Core Skills
 
-  <hr>
+*   **Data Engineering & Architecture:** ETL, Data Warehousing, SQL, AWS, Azure, Azure OpenAI
+*   **AI and Machine Learning:** Regression & Classification, Predictive Analysis, AutoML, Model interpretability (SHAP/LIME), tracking value metrics/OKRs.
+*   **Analytics & Visualization:** Statistical Analysis, Hypothesis Testing, Queueing Theory, Optimization Modelling, A/B Testing, Tableau, Power BI.
+*   **Automation:** Excel VBA, PowerQuery, Power Automate, Python Scripting.
+*   **Web Development:** HTML, CSS, JavaScript.
 
-  <h2>Certifications</h2>
-  <p>Completed Coursera Specializations</p>
-    <ul>
-      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/JR97GN8H8K8C">Python for Everybody by University of Michigan on Coursera</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LTXNXRQLEYAL">Python 3 Programming by University of Michigan on Coursera</a></li>
-      <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/49ZSCNWQXGJ6">Data Analysis and Presentation Skills: The PwC Approach</a></li>
-    </ul>
+## 🚀 Personal Projects
 
-  <h2>Skills</h2>
-  <table cellspacing = "5">
-    <tbody>
-      <tr>
-        <td>Data Analysis with Excel and Building Automated Reporting(Advanced Formulas and Functions) / VBA/Macro</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
+*   **Room Reservation App for Church**: A room reservation application that automates the booking process for church rooms, preventing double bookings. Built with HTML, CSS, JavaScript, and Google Appscript.
+*   **Brilliant.org**: I actively answer Math, Statistics, and Computer Science quizzes for practice.
+*   **Personal Math Tutor**: An ongoing project involving SQL and Tableau (details on live site).
 
-      <tr>
-        <td>Data Wrangling/Data Preprocessing and Building ETL Solutions with Pandas and Numpy</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
+## 🎓 Education
 
-      <tr>
-        <td>Exploratory Data Analysis/ Statistical Analysis in R, Python and Excel. From raw data to insigts and recommendation</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
+*   **Polytechnic University of the Philippines - Sta. Mesa, Manila**
+    *   Bachelor of Science in Industrial Engineering (Graduated 2017)
+    *   *DOST-SEI Scholar (2014), Civil Service Professional Passer*
 
-      <tr>
-        <td>Building Machine Learning Solution for Supervised Problems in Python and R</td>
-        <td>⭐⭐⭐</td>
-      </tr>
+## 🏗️ Technical Stack (For this Website)
+This website was built intentionally without heavy frameworks to ensure maximum performance and maintainability.
+*   **HTML5**: Semantic structure.
+*   **Vanilla CSS3**: Custom property-based design system, CSS Grid, Flexbox, and responsive design.
+*   **Typography**: Lato (Body) and Roboto Mono (Code/Tech tags).
 
-      <tr>
-        <td>Dashboard Design/Data Visualization using PowerBI and Tableau</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr>
-
-  <h2>Work Experiences</h2>
-
-  <table cellspacing = "10">
-    <th>
-      <tr>
-        <td>Date</td>
-        <td>Work</td>
-        <td>Company</td>
-      </tr>
-    </th>
-      <tbody>
-        <tr>
-          <td>May 2021 - Present</td>
-          <td><strong>Data Scientist/ Business Analytics Specialist </strong></td>
-          <td>Teleperformance Philippines</td>
-        </tr>
-        <tr>
-          <td> February 2018 - May 2021</td>
-          <td><strong>Data Analyst and Automation Developer </strong></td>
-          <td>PricewaterhouseCoopers Service Delivery Centre Manila</td>
-        </tr>
-      </tbody>
-    <tfoot>
-    </tfoot>
-
-  </table>
-  <hr>
-
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Master of Science in Engineering, Major in Computer Engineering</strong><em>(15 Units Earned, <strong>Discontinued</strong>)November 2017 – March 2019</em> | Polytechnic University of the Philippines-Manila, Graduate School</li>
-    <li><strong>Post Baccalaureate Diploma in Information Technology</strong><em>(9 Units Earned in parallel with my Masters, <strong>Discontinued</strong>) November 2017 – March 2019</em> | Polytechnic University of the Philippines-Manila, Open University</li>
-    <li><strong>Bachelor of Science in Industrial Engineering</strong><em><strong> (Graduated 2017)</strong></em> | Polytechnic University of the Philippines- Manila</li>
-        <ul>
-          <li>DOST-SEI Scholar 2014</li>
-        </ul>
-  </ul>
-
-  <h2>Projects</h2>
-    <ul>
-      <li>Exploratory Data Analysis of Repeat Chat Transactions for an Entertainment Production Company</li>
-      <li>Building of Attrition Early Warning System for the Agents for clients Insurance, Healthcare and Travel Industry. From Raw Data, to Insights and the actual system that predicts the likelyhood of Agents to Attrite in the next couple months</li>
-      <li>Exploratory and Diagnotic Analysis for different clients that aims to address the causal factors of different metrics(CSAT, Attrition, Repeat Call Rate, etc) in order for the client to have informed decision on improving those metrics</li>
-      <li>Building of Automated Reporting Systems for WFM that significantly reduces the report creation from 3 Hours to 15 Minutes on a Daily Basis</li>
-    </ul>
-
-  <h2>Talks and Technical Seminars</h2>
-  <a href="Talks and Seminars.html">Talks and Technical Seminars</a>
-
-  <h2>Contact me</h2>
-  <a href="Contact Me.html">Contact</a>
-
-</body>
-
-</html>
+---
+*Saved by Grace through faith in Jesus Christ*
