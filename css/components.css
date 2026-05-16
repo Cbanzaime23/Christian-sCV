@@ -1,0 +1,420 @@
+   Header Section
+   ============================================ */
+#dhead {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+#dpic {
+  grid-column: span 5;
+  text-align: right;
+  padding-right: 16px;
+}
+
+#ddesc {
+  padding-top: 32px;
+  padding-left: 24px;
+  grid-column: span 7;
+}
+
+#dpic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 3px solid var(--border);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+
+/* ============================================
+   Typography — Notion-style clean headings
+   ============================================ */
+h1 {
+  font-size: var(--fs-name);
+  font-weight: 700;
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+#ddesc h2 {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: var(--fs-body);
+  padding: 0;
+  margin: 8px 0 16px 0;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  #ddesc h2 {
+    max-width: 340px;
+  }
+}
+
+.section-title {
+  font-size: var(--fs-section);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 28px 0;
+  padding: 0;
+  letter-spacing: -0.3px;
+}
+
+/* ============================================
+   Social Icons
+   ============================================ */
+#dico {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+#dico a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+#dico a:hover {
+  background-color: var(--bg-hover);
+  opacity: 1;
+}
+
+.iico {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+#dico a:hover .iico {
+  opacity: 1;
+}
+
+/* ============================================
+   Timeline — Experience, Internships, Education
+   ============================================ */
+.entry {
+  margin-bottom: 8px;
+}
+
+.timespan {
+  grid-column: span 1;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  text-align: right;
+  padding-right: 14px;
+  padding-top: 3px;
+  color: var(--text-light);
+  white-space: nowrap;
+}
+
+.ico {
+  grid-column: span 1;
+  vertical-align: top;
+  border-left: 1.5px solid var(--border);
+  position: relative;
+}
+
+.ico img {
+  border-radius: var(--radius);
+  width: 100%;
+  max-width: 64px;
+  margin-left: 14px;
+}
+
+.entry-dot {
+  position: absolute;
+  top: 2px;
+  left: -5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--border-dark);
+  border: 2px solid var(--bg);
+  transition: background-color 0.2s;
+}
+
+.entry:hover .entry-dot {
+  background-color: var(--text-muted);
+}
+
+.desc {
+  grid-column: span 10;
+  vertical-align: top;
+  font-size: var(--fs-body);
+  padding-left: 20px;
+  padding-bottom: 24px;
+  line-height: 1.65;
+  color: var(--text-body);
+}
+
+.desc strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.desc ul {
+  padding-left: 18px;
+  margin: 6px 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.desc li {
+  margin-bottom: 3px;
+  color: var(--text-body);
+}
+
+.desc li::marker {
+  color: var(--text-light);
+}
+
+.desc em {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: var(--fs-label);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.desc p {
+  margin: 12px 0 4px 0;
+}
+
+/* ============================================
+   Skill & Course Cards — Notion block style
+   ============================================ */
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  border-top: 3px solid var(--accent-blue-bg);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  background-color: var(--bg-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.skill-card:nth-child(1) {
+  border-top-color: var(--accent-blue-bg);
+}
+
+.skill-card:nth-child(2) {
+  border-top-color: var(--accent-green-bg);
+}
+
+.skill-card:nth-child(3) {
+  border-top-color: var(--accent-purple-bg);
+}
+
+.skill-card:nth-child(4) {
+  border-top-color: var(--accent-orange-bg);
+}
+
+.skill-card h3 {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  color: var(--text-muted);
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-card li {
+  padding: 5px 0;
+  font-size: var(--fs-small);
+  color: var(--text-body);
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-card li:last-child {
+  border-bottom: none;
+}
+
+.skill-card a {
+  font-weight: 400;
+}
+
+/* ============================================
+   Courses — Clean Grid List
+   ============================================ */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.course-group h3 {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  color: var(--text-muted);
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clean-list li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  color: var(--text-body);
+}
+
+.clean-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--text-muted);
+}
+
+/* ============================================
+   Projects — Featured Blocks
+   ============================================ */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-block h3 {
+  font-size: var(--fs-subtitle);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 8px 0;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tech-pill {
+  background: var(--bg-hover);
+  color: var(--text-muted);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.project-block p {
+  font-size: var(--fs-body);
+  color: var(--text-body);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-link span {
+  margin-left: 4px;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover span {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   Talks — Year Groups, Notion tag style
+   ============================================ */
+.talks-year-group {
+  margin-bottom: 24px;
+}
+
+.year-heading {
+  display: inline-block;
+  background: var(--accent-pill-bg);
+  color: var(--text);
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-size: var(--fs-label);
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.3px;
+}
+
+.talks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.talks-list li {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  margin-bottom: 2px;
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  transition: background-color 0.15s;
+  color: var(--text-body);
+}
+
+.talks-list li:hover {
+  background-color: var(--bg-hover);
+}
+
+.talks-list li strong {
+  color: var(--text);
+  font-weight: 700;
+}
+

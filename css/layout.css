@@ -1,0 +1,88 @@
+   Sticky Navigation — Notion-style light bar
+   ============================================ */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-nav li {
+  margin: 0;
+}
+
+.site-nav a {
+  display: block;
+  padding: 12px 18px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: var(--fs-label);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 4px;
+  margin: 4px 2px;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+  background-color: var(--bg-hover);
+  text-decoration: none;
+}
+
+/* ============================================
+   Layout
+   ============================================ */
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 24px;
+  scroll-margin-top: 52px;
+  position: relative;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* ============================================
+   Section Dividers — Notion-style thin line
+   ============================================ */
+.container + .container::before {
+  content: '';
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  height: 1px;
+  background-color: var(--border);
+  margin: 0 auto 48px auto;
+}
+
+   Footer — Minimal
+   ============================================ */
+footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-light);
+  font-size: var(--fs-caption);
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
+}

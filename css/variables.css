@@ -1,0 +1,39 @@
+/* ============================================
+   CSS Custom Properties — Notion-Inspired Palette
+   Black & gray typography with pastel decorative accents
+   ============================================ */
+:root {
+  /* Typography — strict black/gray scale */
+  --text:        #191919;  /* near-black — headings, strong text */
+  --text-body:   #333333;  /* dark gray  — body copy */
+  --text-muted:  #666666;  /* medium gray — secondary text */
+  --text-light:  #999999;  /* light gray — tertiary, captions */
+
+  /* Surfaces */
+  --bg:          #FFFFFF;
+  --bg-secondary:#F7F6F3;
+  --bg-hover:    #F1F1EF;
+  --border:      #E3E2E0;
+  --border-dark: #D3D1CB;
+
+  /* Decorative accents — used ONLY on borders/backgrounds, never text */
+  --accent-blue-bg:   #D3E5EF;
+  --accent-green-bg:  #DBEDDB;
+  --accent-orange-bg: #FADEC9;
+  --accent-purple-bg: #E8DEEE;
+  --accent-pill-bg:   #EDEDEC;
+
+  /* Functional */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.07);
+  --radius: 6px;
+  --radius-lg: 10px;
+
+  /* ---- Typographic scale (desktop) ---- */
+  --fs-name:     34px;   /* h1 — name only          */
+  --fs-section:  22px;   /* section titles           */
+  --fs-body:     15px;   /* body text, descriptions  */
+  --fs-small:    14px;   /* card items, talks, lists */
+  --fs-label:    12px;   /* nav, labels, badges      */
+  --fs-caption:  12px;   /* footer, tiny text        */
+}

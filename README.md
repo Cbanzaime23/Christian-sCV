@@ -35,7 +35,7 @@ You can view the live site here (insert link if applicable), or clone this repos
 ## 🏗️ Technical Stack (For this Website)
 This website was built intentionally without heavy frameworks to ensure maximum performance and maintainability.
 *   **HTML5**: Semantic structure.
-*   **Vanilla CSS3**: Custom property-based design system, CSS Grid, Flexbox, and responsive design.
+*   **Vanilla CSS3 (Modular)**: Custom property-based design system, CSS Grid, Flexbox, and responsive design. The CSS is modularized into a `css/` directory (`variables.css`, `base.css`, `layout.css`, `components.css`, `responsive.css`) and imported via a main `style.css` for maintainability without build tools.
 *   **Typography**: Lato (Body) and Roboto Mono (Code/Tech tags).
 
 ---

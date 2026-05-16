@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  font-family: 'Lato', "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* DataCamp code typeface */
+code,
+pre,
+kbd,
+samp {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* ============================================
+   Links — black text, underline on hover
+   ============================================ */
+a {
+  color: var(--text-body);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+

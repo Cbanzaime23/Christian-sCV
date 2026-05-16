@@ -1,0 +1,191 @@
+/* ============================================
+   Responsive — Tablet (≤991px)
+   ============================================ */
+@media (max-width: 991px) {
+  #dpic {
+    grid-column: span 12;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  #ddesc {
+    grid-column: span 12;
+    padding-top: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #ddesc h2 {
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
+  }
+
+  #dico {
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   Responsive — Mobile (≤768px)
+   ============================================ */
+@media (max-width: 768px) {
+  /* Navigation: compact, scrollable */
+  .site-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0 8px;
+    min-width: max-content;
+  }
+
+  .site-nav a {
+    padding: 10px 14px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Layout */
+  .container {
+    padding: 32px 16px;
+    scroll-margin-top: 48px;
+  }
+
+  .container + .container::before {
+    margin-bottom: 32px;
+  }
+
+  /* Header */
+  #dhead {
+    padding-top: 32px;
+  }
+
+  #dpic img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #ddesc h2 {
+    font-size: 14px;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  /* Timeline: stack vertically */
+  .entry.row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .timespan {
+    text-align: left;
+    padding: 0 0 6px 0;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 700;
+  }
+
+  .ico {
+    border-left: none;
+    padding: 4px 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .ico img {
+    max-width: 48px;
+    margin-left: 0;
+  }
+
+  .entry-dot {
+    display: none;
+  }
+
+  .desc {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+
+  /* Cards: single column */
+  .skill-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 16px;
+  }
+
+  /* Talks */
+  .talks-list li {
+    padding: 8px 8px;
+    font-size: 13px;
+  }
+
+  .year-heading {
+    font-size: 11px;
+  }
+}
+
+/* ============================================
+   Responsive — Small phones (≤480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .container {
+    padding: 24px 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 17px;
+  }
+
+  #ddesc h2 {
+    font-size: 13px;
+  }
+
+  #dpic img {
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+
+  .skill-card li {
+    font-size: 13px;
+  }
+
+  .skill-card h3 {
+    font-size: 11px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 24px 14px;
+  }
+}
