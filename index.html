@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="Christian Ibañez — Data Scientist & Data Engineer specializing in Statistics, Mathematical Optimization, AI Automation, and Machine Learning.">
-  <meta name="keywords" content="Data Science, Data Engineering, Machine Learning, Statistics, Python, Tableau, ETL">
+    content="Christian Ibañez — Applied Research Scientist specializing in Operations Research, Mathematical Optimization, and Machine Learning. Experienced in LP/MIP formulations, queueing-theoretic modeling, and ML-driven decision systems.">
+  <meta name="keywords" content="Operations Research, Mathematical Optimization, Linear Programming, Queueing Theory, Machine Learning, Applied Research, Data Science, Python, Statistical Modeling">
   <meta name="author" content="Christian Ibañez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -29,6 +29,7 @@
   <nav class="site-nav" id="site-nav">
     <ul>
       <li><a href="#dhead">Home</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#internships">Internships</a></li>
       <li><a href="#education">Education</a></li>
@@ -73,6 +74,30 @@
   </header>
 
   <!-- ================================
+       RESEARCH INTERESTS SECTION
+       ================================ -->
+  <section class="container" id="research">
+    <h2 class="section-title">Research Interests</h2>
+    <div class="desc">
+      <p>My research interests lie at the intersection of <strong>Operations Research</strong>,
+        <strong>Machine Learning</strong>, and <strong>Decision Science</strong> — with a focus on
+        formulating real-world business and operational challenges as tractable optimization problems.
+        I am particularly interested in:</p>
+      <ul>
+        <li><strong>Resource Optimization & Scheduling:</strong> Workforce capacity planning, staffing
+          allocation under uncertainty, and multi-objective scheduling formulations (LP/MIP)</li>
+        <li><strong>Queueing-Theoretic Modeling:</strong> Analytical and simulation-based approaches
+          to service system design and capacity dimensioning</li>
+        <li><strong>Explainable ML for Decision Systems:</strong> Interpretable predictive models
+          (SHAP/LIME) for high-stakes domains such as financial services, lending, and customer
+          retention</li>
+        <li><strong>AI-Driven Process Optimization:</strong> Integrating ML predictions with
+          prescriptive optimization to close the loop from insight to action</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================================
        PROFESSIONAL EXPERIENCE SECTION
        ================================ -->
   <section class="container" id="experience">
@@ -86,23 +111,41 @@
         <img src="./images/Sun Life Financial.svg" alt="Sun Life Logo">
       </div>
       <div class="desc">
-        <strong>Data Scientist/AI Solutions Developer/Process Architect - </strong> Sun Life Global Solutions
+        <strong>Data Scientist/AI Solutions Developer - </strong> Sun Life Global Solutions
         Philippines, BGC - Taguig City
         <ul>
-          <li><strong>RAG AI Agent Knowledge Pipeline:</strong> Developed a Python-based ETL pipeline that extracts,
-            parses, and chunks PMO documents for retrieval-augmented generation (RAG) accuracy for MS365 Copilot Agent
-            and custom BMAD style agents.</li>
-          <li><strong>Data Pipeline Orchestration:</strong> Engineered an automated data pipeline suite using Python,
-            PowerShell, and batch scripts integrated with **Power Automate** to trigger real-time Outlook and MS Teams
-            alerts for batch run error. </li>
-          <li><strong>BI Dashboard Quality Audit:</strong> Conducted qualitative user interviews and usage-experience
-            logging to diagnose business-unit Tableau dashboards, mapping out data-quality gaps and SLA mismatches to
-            deliver actionable redesign roadmaps.</li>
-          <li><strong>Queueing Theory Capacity Analysis:</strong> Applied analytical queueing models (such as **M/M/c
-            queueing structures**) to evaluate client-advisor arrival patterns and service distributions in the Client
-            Service Centre, predicting service bottlenecks and identifying staff-scaling scenarios. This analysis was
-            used to assess the feasibility of installing a Queueing Systems for Sun Life Client Service Center branches
+          <li><strong>Queueing Theory Capacity Analysis:</strong> Formulated and solved analytical queueing models
+            (**M/M/c and multi-server variants**) to evaluate client-advisor arrival and service distributions in a
+            real-world Client Service Centre, predicting branch utilization rates and deriving optimum staffing
+            configurations. Designed a distributed queueing system based on the analysis findings. This analysis was
+            used to assess the feasibility of installing Queueing Systems for Sun Life Client Service Center branches.
           </li>
+          <li><strong>Skills Allocation Semantic Model for Resource Management:</strong> Engineered a semantic mapping
+            system using a **BERT transformer model (via Hugging Face)** to extract skill embeddings, correlating cosine
+            similarity scores across employee skillset profiles to accelerate internal resource allocation.</li>
+          <li><strong>FTE vs. Chargeable Hours Analysis:</strong> Conducted a rigorous statistical capacity analysis
+            for the Testing COE, applying hypothesis testing to debunk leadership's efficiency hypothesis by
+            demonstrating that rising chargeable hours required proportional staffing adjustments rather than static FTE
+            counts.</li>
+          <li><strong>RAG AI Agent Knowledge Pipeline:</strong> Lead the development of a Python-based ETL pipeline that
+            extracts,
+            parses, and shards Planview data for retrieval-augmented generation (RAG) for MS365 Copilot Agent
+            and custom BMAD style persona Agent. This project automates the project status analysis and insights
+            generation for PMO Delivery Excellence Team</li>
+          <li><strong>PMO Project Status Compliance Analysis:</strong> Automated the entire weekly PMO project status
+            compliance from data extraction, processing, AI analysis project status data to identify compliance, report
+            creation to the stakeholders</li>
+          <li><strong>PCQA Automation:</strong> Lead the development of end to end automation of project artifacts
+            audit. This projects includes 2 AI Agents (1 Agent for proactive checking of artifact completeness and the
+            2nd Agent is for the project artifact audit) and a dashboard for the audit results</li>
+          <li><strong>Batch Job Data Pipeline Orchestration:</strong> Engineered a Batch Job Data Pipeline Orchestration
+            using Python, FastAPI
+            PowerShell, and batch scripts integrated with **Power Automate** to trigger real-time Outlook and MS Teams
+            alerts for batch run error and automated AI generated error analysis. </li>
+          <li><strong>BI Dashboard Quality Audit:</strong> Conducted qualitative user interviews and usage-experience
+            logging to diagnose business-unit Tableau dashboards for the unrealized business savings, mapping out
+            data-quality gaps and SLA mismatches to
+            deliver actionable redesign roadmaps.</li>
           <li><strong>Agile Footprint Dashboard:</strong> Migrated manual Agile Footprint reporting by architecting a
             **Power Query data model** that cleans and merges multi-source sprint records, deploying a Tableau dashboard
             that reduced monthly report generation time from 32 hours to 30 minutes (98% time saved) with 95% data
@@ -110,17 +153,11 @@
           <li><strong>Data Literacy Workshops:</strong> Conducted Power Query workshops to cultivate a data-driven
             mindset and improve data quality awareness, standardizing Excel workflows across PMO, PCQA, and Agile teams.
           </li>
-          <li><strong>Skills Allocation Semantic Model for Resource Management:</strong> Engineered a semantic mapping
-            system using a **BERT transformer model (via Hugging Face)** to extract skill embeddings, correlating cosine
-            similarity scores across employee skillset profiles to accelerate internal resource allocation.</li>
-          <li><strong>FTE vs. Chargeable Hours Analysis:</strong> Conducted a capacity analysis for the Testing COE,
-            debunking leadership's efficiency hypothesis by demonstrating that rising chargeable hours required
-            proportional staffing adjustments rather than static FTE counts.</li>
         </ul>
 
         <p><em>Trainings:</em></p>
         <ul>
-          <li>PM Bootcamp with Generative AI Application</li>
+          <li>Project Management Bootcamp with Generative AI Application</li>
           <li>7 Habits of Highly Effective people</li>
           <li>Excel Power Query Beginner to Advanced (Udemy)</li>
           <li>Project Management Fundamentals (PMI)</li>
@@ -140,7 +177,20 @@
         <strong>Data Scientist/Business Analytics Manager - </strong> Teleperformance Philippines, EDSA Greenfield
         District - Mandaluyong City
         <ul>
-          <li><strong>Sales Retention Scoring Model:</strong> Engineered and deployed a classification scoring model
+          <li><strong>Workforce Agent Scheduling Optimization:</strong> Formulated and prototyped a workforce scheduling
+            optimization model for an insurance account, modeling agent shift schedules, shrinkage patterns, and demand
+            forecasts as a constrained optimization problem to minimize over- and under-capacity risk on a weekly
+            planning horizon. Explored integer programming formulations with scheduling and resource allocation
+            constraints.</li>
+          <li><strong>Predictive Attrition Early Warning System:</strong> Developed and deployed a batch prediction
+            system utilizing supervised classification models (**Random Forest/Gradient Boosting**) across Healthcare,
+            BFSI, and Travel accounts, achieving a **2-3% monthly attrition reduction**; integrated **SHAP/LIME
+            explainable AI (XAI)** to generate personalized, feature-level coaching recommendations ("who to coach and
+            what to coach") for team leaders, yielding **€2M+ in financially validated savings** in the Banking,
+            Financial Services & Insurance (BFSI) sector — directly relevant to lending risk reduction and customer
+            lifetime value optimization.</li>
+          <li><strong>Sales Retention Scoring Model:</strong> Engineered and deployed mutiple classification scoring
+            model for different product category
             (utilizing **Python, XGBoost, and PyCaret/AutoML** for ensembling) for an Healthcare and Life Sciences
             client, delivering a **5% revenue increase (~₱2M)** within three months of deployment, validated via
             pre-and-post-launch business metric tracking.</li>
@@ -148,17 +198,11 @@
             (Chi-Square/ANOVA) and exploratory data analysis (EDA) in Python to isolate statistically significant
             drivers of customer contacts; designed a Power BI dashboard fueled by a custom **Python-to-SQL preprocessing
             pipeline** to enable proactive, manual tracking of repeat transaction root causes.</li>
-          <li><strong>Predictive Attrition Early Warning System:</strong> Developed and deployed a batch prediction
-            system utilizing supervised classification models (**Random Forest/Gradient Boosting**) across Healthcare,
-            BFSI, and Travel accounts, achieving a **2-3% monthly attrition reduction**; integrated **SHAP/LIME
-            explainable AI (XAI)** to generate personalized, feature-level coaching recommendations ("who to coach and
-            what to coach") for team leaders, yielding **€2M+ in financially validated savings** in the BFSI sector.
-          </li>
         </ul>
         <p><em>Trainings:</em></p>
         <ul>
           <li>COPC Certified Lean Six Sigma Yellow Belt (2022)</li>
-          <li>Design Thinking Workshops</li>
+          <li>Attended mutiple Design Thinking Workshops</li>
         </ul>
       </div>
     </div>
@@ -174,6 +218,11 @@
         <strong>Data Analysis and Visualization Analyst - </strong> PricewaterhouseCoopers Service Delivery Centre,
         Rockwell Business Centre - Pasig City
         <ul>
+          <li><strong>Demand & FTE Capacity Optimization Model:</strong> Formulated a **Linear/Integer Programming
+            (LP/IP) optimization model** to minimize staffing overhead while satisfying SLA constraints under
+            fluctuating demand; implemented the model in Excel Solver and engineered an interactive **VBA dashboard
+            interface** enabling operations managers to simulate staffing scenarios, input capacity buffers, and plot
+            optimal schedules.</li>
           <li><strong>Productivity Report Digitization Project:</strong> Served as Lead Developer, engineering
             manually-triggered **Alteryx ETL workflows** to ingest, clean, and join data from 10+ disparate operational
             databases; designed an interactive **Power BI dashboard utilizing advanced DAX calculations and custom data
@@ -183,10 +232,6 @@
             automation workflow (**Excel VBA, Alteryx, and UiPath RPA**) that digitized 100% of the preparer work for
             the Evidence Gathering Audit (EGA) process and automated uploading of EGAs to the internal audit portal,
             saving hundreds of hours across the Financial Services cluster.</li>
-          <li><strong>Demand & FTE Capacity Optimization Model:</strong> Formulated a **Linear/Integer Programming
-            optimization model** in Excel Solver to minimize staffing overhead while satisfying SLA constraints under
-            fluctuating demand; engineered an interactive **VBA dashboard interface** enabling operations managers to
-            simulate staffing scenarios, input capacity buffers, and plot optimal schedules.</li>
           <li><strong>Project Management Tracker:</strong> Programmed a robust **Alteryx ETL workflow** integrated with
             **Google Sheets APIs** to extract, transform, and load live project tracking metrics directly into a
             **Tableau dashboard**, standardizing and automating multi-source reporting.</li>
@@ -378,48 +423,50 @@
     <h2 class="section-title">Skills</h2>
     <div class="skill-cards">
       <div class="skill-card">
-        <h3>Data Engineering</h3>
+        <h3>Operations Research &amp; Optimization</h3>
         <ul>
-          <li>Data Extraction using API, Database Systems and Web Scraping (Python)</li>
-          <li>SQL Scripting & Database Querying</li>
-          <li>ETL Data Pipeline Development with Python(Pandas, Polars), Batch Scripting and Powershell</li>
+          <li>Mathematical Optimization: Linear Programming (LP), Mixed-Integer Programming (MIP), Constraint Programming</li>
+          <li>Optimization Modelling using MiniZinc, Excel Solver, R, Python</li>
+          <li>Queueing Theory and Simulation (R, Python, Excel)</li>
+          <li>Resource Allocation, Scheduling, and Capacity Planning</li>
+          <li>Design of Experiments and A/B Testing (Python, R, Excel, Minitab)</li>
+          <li>Statistical Analysis/Hypothesis Testing &amp; EDA (Python, R, Excel)</li>
         </ul>
       </div>
       <div class="skill-card">
-        <h3>AI and Machine Learning</h3>
+        <h3>Machine Learning &amp; Statistical Modeling</h3>
         <ul>
-          <li>Regression & Classification Modeling (Python, R)</li>
+          <li>Regression &amp; Classification Modeling (Python, R)</li>
           <li>Predictive and Prescriptive Analysis</li>
           <li>Model Training and Evaluation</li>
           <li>Forecasting and Time Series Analysis</li>
           <li>Survival Analysis</li>
-          <li>Machine Learning/Statistical Inference for Business Insights</li>
-          <li>Model interpretability and explainability using SHAP and LIME</li>
+          <li>Explainable AI (SHAP, LIME) for interpretable decision systems</li>
+          <li>NLP &amp; Transformer Models (BERT via HuggingFace)</li>
           <li>Using Automated Machine Learning (AutoML) tools to speed up model training and evaluation (pyCaret,
             AutoGluon)</li>
           <li>Tracking the value of data science projects in terms of business metrics/OKRs</li>
         </ul>
       </div>
       <div class="skill-card">
-        <h3>Analytics & Visualization</h3>
+        <h3>Data Engineering &amp; ML Pipelines</h3>
         <ul>
-          <li>Statistical Analysis/Hypothesis Testing & EDA (Python, R, Excel, LLM for data analysis)</li>
-          <li>Queueing Theory and Simulation (R, Python, Excel)</li>
-          <li>Optimization Modelling using Minizinc, Solver, R, Python</li>
-          <li>Design of Experiments and A/B Testing (Python, R, Excel, Minitab)</li>
-          <li>Using LLM for Data Analysis and Visualization</li>
+          <li>Data Extraction using API, Database Systems and Web Scraping (Python)</li>
+          <li>SQL Scripting &amp; Database Querying</li>
+          <li>ETL Data Pipeline Development with Python (Pandas, Polars), Batch Scripting and PowerShell</li>
+          <li>End-to-end ML pipeline design (training, evaluation, deployment)</li>
           <li>Dashboard Development and Visualization with Tableau, Power BI, D3.js</li>
         </ul>
       </div>
       <div class="skill-card">
-        <h3>Automation</h3>
+        <h3>AI Agents &amp; Automation</h3>
         <ul>
-          <li>Excel VBA</li>
-          <li>PowerQuery & DAX</li>
-          <li>Power Automate</li>
-          <li>Python Scripting for automation</li>
+          <li>RAG Pipeline Architecture and LLM Agent Development</li>
           <li>Using LLM for Workflow automation and data analysis</li>
-
+          <li>Python Scripting for automation</li>
+          <li>Excel VBA</li>
+          <li>PowerQuery &amp; DAX</li>
+          <li>Power Automate</li>
         </ul>
       </div>
       <div class="skill-card">
@@ -428,8 +475,6 @@
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
-
-
         </ul>
       </div>
     </div>
@@ -520,7 +565,7 @@
        TALKS & SEMINARS SECTION
        ================================ -->
   <section class="container" id="talks">
-    <h2 class="section-title">Talks, Technical Seminars & Panelist Roles</h2>
+    <h2 class="section-title">Research Talks, Academic Lectures & Panelist Roles</h2>
 
     <!-- 2025 -->
     <div class="talks-year-group">
