@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian B. Ibañez — Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      /* Typographic scale from index.html / variables.css */
+      --fs-name:     34px;
+      --fs-section:  22px;
+      --fs-body:     14px;
+      --fs-small:    13px;
+      --fs-label:    12px;
+      --fs-caption:  12px;
+    }
+
+    /* ====== Reset & Base ====== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+      font-size: var(--fs-body);
+      line-height: 1.35;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    /* ====== Page container ====== */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 10mm 15mm 10mm 15mm;
+    }
+
+    /* ====== Print rules ====== */
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        width: 100%;
+        padding: 10mm 15mm 10mm 15mm;
+        margin: 0;
+        min-height: auto;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      h2 {
+        page-break-after: avoid;
+      }
+
+      .entry {
+        page-break-inside: auto;
+      }
+
+      .entry li,
+      .talks-year,
+      .project-item,
+      .skill-group,
+      .cert-item,
+      .edu-entry {
+        page-break-inside: avoid;
+      }
+    }
+
+    /* ====== Header ====== */
+    .header {
+      text-align: center;
+      margin-bottom: 6px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #2a6496;
+    }
+
+    .header h1 {
+      font-size: var(--fs-name);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: #1a1a1a;
+      margin-bottom: 2px;
+    }
+
+    .header .subtitle {
+      font-size: var(--fs-body);
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      font-size: var(--fs-label);
+      color: #444;
+      flex-wrap: wrap;
+    }
+
+    .contact-row a {
+      color: #2a6496;
+      text-decoration: none;
+    }
+
+    .contact-row span::before {
+      content: '·';
+      margin-right: 4px;
+      color: #bbb;
+    }
+
+    .contact-row span:first-child::before {
+      content: '';
+      margin: 0;
+    }
+
+    /* ====== Section headings ====== */
+    h2 {
+      font-size: var(--fs-section);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #2a6496;
+      border-bottom: 1px solid #d0d0d0;
+      padding-bottom: 2px;
+      margin: 10px 0 5px 0;
+    }
+
+    h2:first-child,
+    .page>h2:first-child {
+      margin-top: 0;
+    }
+
+    /* ====== Experience entries ====== */
+    .entry {
+      margin-bottom: 6px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .entry-header .role {
+      font-size: var(--fs-body);
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .entry-header .dates {
+      font-size: var(--fs-small);
+      color: #666;
+      white-space: nowrap;
+      font-style: italic;
+    }
+
+    .entry .org {
+      font-size: var(--fs-small);
+      color: #555;
+      margin-bottom: 2px;
+    }
+
+    .entry ul {
+      margin: 1px 0 0 16px;
+      padding: 0;
+    }
+
+    .entry li {
+      font-size: var(--fs-small);
+      line-height: 1.35;
+      margin-bottom: 2px;
+      color: #333;
+    }
+
+    .trainings-label {
+      font-size: var(--fs-small);
+      font-style: italic;
+      color: #555;
+      margin: 3px 0 1px 0;
+    }
+
+    .trainings-list {
+      list-style: none;
+      margin: 0 0 0 16px;
+      padding: 0;
+    }
+
+    .trainings-list li {
+      font-size: var(--fs-caption);
+      color: #555;
+      line-height: 1.3;
+    }
+
+    .trainings-list li::before {
+      content: '– ';
+      color: #999;
+    }
+
+    /* ====== Skills grid ====== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 24px;
+      margin-top: 3px;
+    }
+
+    .skill-group h3 {
+      font-size: var(--fs-body);
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 2px;
+    }
+
+    .skill-group p {
+      font-size: var(--fs-small);
+      color: #444;
+      line-height: 1.35;
+      margin-bottom: 0;
+    }
+
+    /* ====== Compact list ====== */
+    .compact-list {
+      list-style: none;
+      padding: 0;
+      margin: 2px 0 0 0;
+    }
+
+    .compact-list li {
+      font-size: var(--fs-small);
+      line-height: 1.35;
+      padding: 1px 0;
+      color: #333;
+    }
+
+    .compact-list li::before {
+      content: '▸ ';
+      color: #2a6496;
+      font-size: var(--fs-caption);
+    }
+
+    /* ====== Education ====== */
+    .edu-entry {
+      margin-bottom: 4px;
+    }
+
+    .edu-entry .degree {
+      font-size: var(--fs-body);
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .edu-entry .school {
+      font-size: var(--fs-small);
+      color: #555;
+    }
+
+    .edu-entry .details {
+      font-size: var(--fs-caption);
+      color: #666;
+      font-style: italic;
+    }
+
+    /* ====== Research interests ====== */
+    .research-text {
+      font-size: var(--fs-body);
+      color: #333;
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+
+    /* ====== Certifications ====== */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 20px;
+      margin-top: 2px;
+    }
+
+    .cert-item {
+      font-size: var(--fs-small);
+      color: #444;
+      line-height: 1.35;
+    }
+
+    /* ====== Talks grouped ====== */
+    .talks-year {
+      margin-bottom: 4px;
+    }
+
+    .talks-year h3 {
+      font-size: var(--fs-body);
+      font-weight: 700;
+      color: #2a6496;
+      margin-bottom: 1px;
+    }
+
+    .talks-year ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .talks-year li {
+      font-size: var(--fs-small);
+      color: #333;
+      line-height: 1.35;
+      padding: 1px 0;
+    }
+
+    .talks-year li::before {
+      content: '▸ ';
+      color: #2a6496;
+      font-size: var(--fs-caption);
+    }
+
+    /* ====== Projects ====== */
+    .project-item {
+      margin-bottom: 4px;
+    }
+
+    .project-item h3 {
+      font-size: var(--fs-body);
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 1px;
+    }
+
+    .project-item .tech {
+      font-size: var(--fs-caption);
+      color: #2a6496;
+      margin-bottom: 1px;
+    }
+
+    .project-item p {
+      font-size: var(--fs-small);
+      color: #444;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Christian B. Ibañez</h1>
+      <p class="subtitle">Data Scientist · Operations Research · AI/ML</p>
+      <div class="contact-row">
+        <span>christianbiongibanez@gmail.com</span>
+        <span><a href="https://linkedin.com/in/ibanezchristian/">linkedin.com/in/ibanezchristian</a></span>
+        <span><a href="https://github.com/Cbanzaime23">github.com/Cbanzaime23</a></span>
+        <span><a href="https://cbanzaime23.github.io/Christian-sCV/">cbanzaime23.github.io/Christian-sCV</a></span>
+      </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <h2>Professional Experience</h2>
+
+    <!-- Sun Life -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="role">Data Scientist / AI Solutions Developer</span>
+        <span class="dates">2024 – Present</span>
+      </div>
+      <div class="org">Sun Life Global Solutions Philippines · BGC, Taguig City</div>
+      <ul>
+        <li><strong>Queueing Theory Capacity Analysis:</strong> Formulated and solved analytical queueing models (M/M/c
+          and multi-server variants) to evaluate client-advisor arrival and service distributions in a real-world Client
+          Service Centre, predicting branch utilization rates and deriving optimum staffing configurations. This
+          analysis was used to assess the feasibility of installing Queueing Systems for Sun Life Client Service Center
+          branches.</li>
+        <li><strong>Skills Allocation Semantic Model:</strong> Engineered a semantic mapping system using a BERT
+          transformer model (via Hugging Face) to extract skill embeddings, correlating cosine similarity scores across
+          employee skillset profiles to accelerate internal resource allocation.</li>
+        <li><strong>FTE vs. Chargeable Hours Analysis:</strong> Conducted a rigorous statistical capacity analysis for
+          the Testing COE, applying hypothesis testing to debunk leadership's efficiency hypothesis by demonstrating
+          that rising chargeable hours required proportional staffing adjustments rather than static FTE counts.</li>
+        <li><strong>RAG AI Agent Knowledge Pipeline:</strong> Led the development of a Python-based ETL pipeline that
+          extracts, parses, and shards Planview data for retrieval-augmented generation (RAG) for MS365 Copilot Agent
+          and custom BMAD-style persona Agent. Automates project status analysis and insights generation for PMO
+          Delivery Excellence Team at a Portfolio Level.</li>
+        <li><strong>PMO Project Status Compliance:</strong> Automated the entire weekly PMO project status compliance
+          from data extraction, processing, AI analysis of project status data to identify compliance, and report
+          creation to stakeholders.</li>
+        <li><strong>PCQA Automation:</strong> Worked with PCQA team on end-to-end automation of project artifacts audit,
+          including 2 AI Agents (proactive artifact completeness checking and project artifact audit) and a dashboard
+          for audit results.</li>
+        <li><strong>Batch Job Data Pipeline Orchestration:</strong> Engineered pipeline using Python, FastAPI,
+          PowerShell, and batch scripts integrated with Power Automate to trigger real-time Outlook and MS Teams alerts
+          for batch run errors with automated AI-generated error analysis.</li>
+        <li><strong>BI Dashboard Quality Audit:</strong> Conducted qualitative user interviews and usage-experience
+          logging to diagnose business-unit Tableau dashboards for unrealized business savings, mapping data-quality
+          gaps and SLA mismatches to deliver actionable redesign roadmaps.</li>
+        <li><strong>Agile Footprint Dashboard:</strong> Migrated manual Agile Footprint reporting by architecting a
+          Power Query data model that cleans and merges multi-source sprint records, deploying a Tableau dashboard that
+          reduced monthly report generation from 32 hours to 30 minutes (98% time saved) with 95% data accuracy.</li>
+        <li><strong>Data Literacy Workshops:</strong> Conducted Power Query workshops to cultivate a data-driven mindset
+          and improve data quality awareness, standardizing Excel workflows across PMO, PCQA, and Agile teams.</li>
+      </ul>
+      <p class="trainings-label">Trainings:</p>
+      <ul class="trainings-list">
+        <li>Project Management Bootcamp with Generative AI Application</li>
+        <li>7 Habits of Highly Effective People</li>
+        <li>Excel Power Query Beginner to Advanced (Udemy)</li>
+        <li>Project Management Fundamentals (PMI)</li>
+        <li>Data Storytelling for Business (StoryIQ)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page page-break">
+
+    <!-- Teleperformance -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="role">Data Scientist / Business Analytics Manager</span>
+        <span class="dates">2021 – 2024</span>
+      </div>
+      <div class="org">Teleperformance Philippines · EDSA Greenfield District, Mandaluyong City</div>
+      <ul>
+        <li><strong>Workforce Agent Scheduling Optimization:</strong> Formulated and prototyped a workforce scheduling
+          optimization model for an insurance account, modeling agent shift schedules, shrinkage patterns, and demand
+          forecasts as a constrained optimization problem to minimize over- and under-capacity risk on a weekly planning
+          horizon. Explored integer programming formulations with scheduling and resource allocation constraints.</li>
+        <li><strong>Predictive Attrition Early Warning System:</strong> Developed and deployed a batch prediction system
+          utilizing supervised classification models (Random Forest/Gradient Boosting) across Healthcare, BFSI, and
+          Travel accounts, achieving a 2–3% monthly attrition reduction; integrated SHAP/LIME explainable AI (XAI) to
+          generate personalized, feature-level coaching recommendations ("who to coach and what to coach") for team
+          leaders, yielding <strong>€2M+ in financially validated savings</strong> in the BFSI sector.</li>
+        <li><strong>Sales Retention Scoring Model:</strong> Engineered and deployed multiple classification scoring
+          models for different product categories (utilizing Python, XGBoost, and PyCaret/AutoML for ensembling) for a
+          Healthcare and Life Sciences client, delivering a <strong>5% revenue increase (~₱2M)</strong> within three
+          months of deployment, validated via pre-and-post-launch business metric tracking.</li>
+        <li><strong>Repeat Chat Root-Cause Analysis:</strong> Conducted statistical hypothesis testing
+          (Chi-Square/ANOVA) and exploratory data analysis in Python to isolate statistically significant drivers of
+          customer contacts; designed a Power BI dashboard fueled by a custom Python-to-SQL preprocessing pipeline to
+          enable proactive, manual tracking of repeat transaction root causes.</li>
+      </ul>
+      <p class="trainings-label">Trainings:</p>
+      <ul class="trainings-list">
+        <li>COPC Certified Lean Six Sigma Yellow Belt (2022)</li>
+        <li>Attended multiple Design Thinking Workshops</li>
+      </ul>
+    </div>
+
+    <!-- PwC -->
+    <div class="entry">
+      <div class="entry-header">
+        <span class="role">Data Analysis & Visualization Analyst</span>
+        <span class="dates">2018 – 2021</span>
+      </div>
+      <div class="org">PricewaterhouseCoopers Service Delivery Centre · Rockwell Business Centre, Pasig City</div>
+      <ul>
+        <li><strong>Demand & FTE Capacity Optimization Model:</strong> Formulated a Linear/Integer Programming (LP/IP)
+          optimization model to minimize staffing overhead while satisfying fluctuating demand; implemented the model in
+          Excel Solver and engineered an interactive VBA dashboard interface enabling operations Workforce Planners to
+          simulate staffing scenarios, input capacity buffers, and plot optimal schedules.</li>
+        <li><strong>Productivity Report Digitization Project:</strong> Served as Lead Developer, engineering
+          manually-triggered Alteryx ETL workflows to ingest, clean, and join data from 10+ disparate operational
+          databases; designed an interactive Power BI dashboard utilizing advanced DAX calculations and custom data
+          modeling to visualize operational KPI trends, reducing daily preparation time from 3 hours to less than 20
+          minutes.</li>
+        <li><strong>Asset Management Process Automation:</strong> Designed and implemented a hybrid, multi-tool
+          automation workflow (Excel VBA, Alteryx, and UiPath RPA) that digitized 100% of the preparer work for the
+          Evidence Gathering Audit (EGA) process and automated uploading of EGAs to the internal audit portal, saving
+          hundreds of hours across the Financial Services cluster.</li>
+        <li><strong>Project Management Tracker:</strong> Programmed a robust Alteryx ETL workflow integrated with Google
+          Sheets APIs to extract, transform, and load live project tracking metrics directly into a Tableau dashboard,
+          standardizing and automating multi-source reporting.</li>
+        <li><strong>Google Sheet to Web App Conversion:</strong> Developed and deployed a full-stack Google Apps Script
+          Web Application (HTML5, CSS3, JavaScript) to standardize user inputs and enforce real-time data validation,
+          eliminating downstream RPA bot failures caused by malformed data.</li>
+        <li>Deployed Excel VBA solutions to speed up data preprocessing, reporting, and auditing processes in HR,
+          Learning & Development, and Risk & Quality.</li>
+        <li>Pioneered the Data Analytics and Visualization delivery team, establishing the first team to deliver
+          chargeable VBA, Alteryx, and Power BI solutions across HK, SG, and AU regions.</li>
+        <li>Co-facilitated an internal <strong>Excel VBA Training</strong> for the Data Analytics and Visualization team, equipping teammates with macro programming skills to accelerate automation workflows and reinforce a culture of continuous upskilling.</li>
+        <li>Promoted from Associate to Analyst role (2020) and transitioned from Contractual to FTE (2018).</li>
+      </ul>
+      <p class="trainings-label">Trainings:</p>
+      <ul class="trainings-list">
+        <li>Alteryx Designer Core Certified (2019)</li>
+        <li>DOST-Coursera Grant (2020, 2018)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ==================== PAGE 3 ==================== -->
+  <div class="page page-break">
+
+    <!-- Education -->
+    <h2>Education</h2>
+
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">B.S. Industrial Engineering</span>
+        <span class="dates">2012 – 2017</span>
+      </div>
+      <div class="school">Polytechnic University of the Philippines — Sta. Mesa, Manila</div>
+      <div class="details">Civil Service Professional Passer · Civil Service SubProfessional Passer · DOST-SEI Scholar
+        (2014)</div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">M.S. Engineering, Major in Computer Engineering — 15 units earned</span>
+        <span class="dates">2017 – 2019</span>
+      </div>
+      <div class="school">Polytechnic University of the Philippines</div>
+      <div class="details">DOST-PCIEERD Data, Connectivity and Intelligence: Data Science Track Scholar 2017 Recipient
+        (Discontinued)</div>
+    </div>
+
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">Post Baccalaureate Diploma in Information Technology — 9 units earned</span>
+        <span class="dates">2017 – 2019</span>
+      </div>
+      <div class="school">Polytechnic University of the Philippines (in parallel with Masters, Discontinued)</div>
+    </div>
+
+    <!-- Research Interests -->
+    <h2>Research Interests</h2>
+    <p class="research-text">
+      My research interests lie at the intersection of <strong>Operations Research</strong>, <strong>Machine
+        Learning</strong>, and <strong>Decision Science</strong> — with a focus on formulating real-world business and
+      operational challenges as tractable optimization problems:
+    </p>
+    <ul class="compact-list" style="margin-top: 3px;">
+      <li><strong>Resource Optimization & Scheduling:</strong> Workforce capacity planning, staffing allocation under
+        uncertainty, and multi-objective scheduling formulations (LP/MIP)</li>
+      <li><strong>Queueing-Theoretic Modeling:</strong> Analytical and simulation-based approaches to service system
+        design and capacity dimensioning</li>
+      <li><strong>Explainable ML for Decision Systems:</strong> Interpretable predictive models (SHAP/LIME) for
+        high-stakes domains such as financial services and customer retention</li>
+      <li><strong>AI-Driven Process Optimization:</strong> Integrating ML predictions with prescriptive optimization to
+        close the loop from insight to action</li>
+    </ul>
+
+    <!-- Technical Skills -->
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>📐 Operations Research & Optimization</h3>
+        <p>Mathematical Optimization: LP, MIP, Constraint Programming (MiniZinc, Excel Solver, R, Python) · Queueing
+          Theory & Simulation · Resource Allocation, Scheduling & Capacity Planning · Design of Experiments & A/B
+          Testing (Python, R, Excel, Minitab) · Statistical Analysis/Hypothesis Testing & EDA</p>
+      </div>
+      <div class="skill-group">
+        <h3>🧠 Machine Learning & Statistical Modeling</h3>
+        <p>Regression & Classification (Python, R) · Predictive & Prescriptive Analysis · Forecasting & Time Series (ARIMA, SARIMAX, Prophet) ·
+          Survival Analysis · Explainable AI (SHAP, LIME) · NLP & Transformer Models (BERT via HuggingFace) · AutoML
+          (PyCaret, AutoGluon) · Business metric/OKR tracking for DS projects</p>
+      </div>
+      <div class="skill-group">
+        <h3>⚙️ Data Engineering & ML Pipelines</h3>
+        <p>Data Extraction (API, Databases, Web Scraping) · SQL Scripting & Querying · ETL Pipelines
+          (Python/Pandas/Polars, Alteryx, PowerShell, Batch) · End-to-end ML pipeline design · Dashboard & Visualization
+          (Tableau, Power BI, D3.js)</p>
+      </div>
+      <div class="skill-group">
+        <h3>🤖 AI Agents & Automation</h3>
+        <p>RAG Pipeline Architecture · LLM Agent Development · MS365 Copilot · Power Automate · Excel VBA · UiPath RPA ·
+          PowerQuery & DAX · Google Apps Script · HTML/CSS/JavaScript</p>
+      </div>
+    </div>
+
+
+    <!-- Certifications & Courses -->
+    <h2>Certifications & Courses</h2>
+    <div class="certs-grid">
+      <div>
+        <h3 style="font-size:0.93rem; font-weight:700; color:#333; margin-bottom:3px;">Machine Learning & AI</h3>
+        <div class="cert-item">▸ Analyze Datasets and Train ML Models using AutoML — Coursera</div>
+        <div class="cert-item">▸ Build, Train, and Deploy ML Pipelines using BERT — Coursera</div>
+      </div>
+      <div>
+        <h3 style="font-size:0.93rem; font-weight:700; color:#333; margin-bottom:3px;">Python Programming</h3>
+        <div class="cert-item">▸ Python for Everybody — Coursera Specialization</div>
+        <div class="cert-item">▸ Python 3 Programming — Coursera Specialization</div>
+      </div>
+      <div>
+        <h3 style="font-size:0.93rem; font-weight:700; color:#333; margin-bottom:3px;">Data Science & Statistics</h3>
+        <div class="cert-item">▸ Experimental Design Basics — Coursera</div>
+        <div class="cert-item">▸ Data Science: Foundation using R — Coursera Specialization</div>
+        <div class="cert-item">▸ Data Analysis & Presentation Skills: the PwC Approach — Coursera</div>
+        <div class="cert-item">▸ Python for Time Series Data Analysis — Udemy</div>
+      </div>
+      <div>
+        <h3 style="font-size:0.93rem; font-weight:700; color:#333; margin-bottom:3px;">Professional Certifications</h3>
+        <div class="cert-item">▸ COPC Lean Six Sigma Yellow Belt (2022)</div>
+        <div class="cert-item">▸ Alteryx Designer Core Certified (2019)</div>
+        <div class="cert-item">▸ Project Management Fundamentals — PMI</div>
+        <div class="cert-item">▸ Data Storytelling for Business — StoryIQ</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ==================== PAGE 4 ==================== -->
+  <div class="page page-break">
+
+    <!-- Awards -->
+    <h2>Awards & Achievements</h2>
+    <ul class="compact-list">
+      <li><strong>Best Data Scientist Award</strong> — Teleperformance Philippines (2023)</li>
+      <li><strong>TP Datathon — 1st Place (Regional)</strong> — Won first place in the regional data science and
+        analytics hackathon (2021)</li>
+      <li><strong>TP Datathon — 3rd Place (Global)</strong> — Placed third globally among international teams, designing
+        and presenting predictive models (2021)</li>
+    </ul>
+
+    <!-- Academic Talks -->
+    <h2>Academic Talks & Panelist Roles</h2>
+
+    <div class="talks-year">
+      <h3>2025</h3>
+      <ul>
+        <li>IEAC 2025 Alumni Guest Speaker — PUP Sta. Mesa, Industrial Engineering Department (June 2025)</li>
+      </ul>
+    </div>
+
+    <div class="talks-year">
+      <h3>2023</h3>
+      <ul>
+        <li>IE4DS: IE's Competitive Advantage, Challenges and Opportunities for IEs in Data Science — PUP Sta. Mesa,
+          Industrial Engineering Department (July 2023)</li>
+      </ul>
+    </div>
+
+    <div class="talks-year">
+      <h3>2022</h3>
+      <ul>
+        <li>Getting Started with Data Analytics — Asia Technological School of Science and Arts, College of Engineering
+          and IT Education (December 2022)</li>
+        <li>KnowledgED IEndustries: Upskilling for a Data Science Job as an IE Student — PIIE LPU Cavite (February 2022)
+        </li>
+      </ul>
+    </div>
+
+    <div class="talks-year">
+      <h3>2021</h3>
+      <ul>
+        <li>Data Mining: Process, Concept and Tools — PUP ACCESS, Computer Engineering Department (September 2021)</li>
+        <li>Prescriptive Analytics: Excel, R and Python for Solving Linear Programming Problems — PIIE LPU Cavite
+          Student Chapter (June 2021)</li>
+        <li>IE As a Data Analyst and Automation Developer — Industrial Engineering Department, Quezon City University
+          (February 2021)</li>
+      </ul>
+    </div>
+
+    <div class="talks-year">
+      <h3>2020</h3>
+      <ul>
+        <li>Solving Real World Problems in OR — Industrial Engineering Department, Quezon City University (November
+          2020)</li>
+        <li>Excel Beyond the Basics (Advanced Formulas, Data Analysis, Solver, VBA) — Industrial Engineering Department,
+          TIP-QC (September 2020)</li>
+        <li>Automation with Excel VBA — ALPHA TV Webinar | Ask Lex PH Academy (May 2020)</li>
+        <li>Data Analysis and Visualization — Industrial Engineering Annual Convention 2020 | PIIE PUP Sta. Mesa
+          (February 2020)</li>
+        <li>Optimization: From Data Science and Operations Research — Industrial Engineering Symposium 2020 | IE
+          Department, PUP Biñan Campus (February 2020)</li>
+        <li>Introduction to Data Science and Machine Learning with Python — ECE Special Lecture Series 2020 | ECE
+          Department, PUP Sta. Rosa Campus (February 2020)</li>
+      </ul>
+    </div>
+
+    <div class="talks-year">
+      <h3>2019</h3>
+      <ul>
+        <li>Prescriptive Analytics: Simulation using Excel's What-if Analysis — IEshikawa 14 by UP-CIEM | University of
+          the Philippines - Diliman (November 2019)</li>
+        <li>Move Forward in AI: OR in AI — ORSP-UST Chapter | University of Sto. Tomas (November 2019)</li>
+        <li>Research Panelist, Science Research Fair and Congress 2019 — Antipolo City National Science and Technology
+          High School (March 2019)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- ==================== PAGE 5 ==================== -->
+  <div class="page page-break">
+
+    <!-- Internships -->
+    <h2>Internships</h2>
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">Toyota Makati Inc. — Kaizen Intern (320 hrs)</span>
+        <span class="dates">2016</span>
+      </div>
+      <div class="details">Applied Toyota Business Practice framework, Kaizen, and Lean Manufacturing principles to map
+        processes, analyze data, and visualize root causes in the Parts Department warehouse.</div>
+    </div>
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">Khumbu Enterprise Inc. (Sandugo) — Work Study Intern (300 hrs)</span>
+        <span class="dates">2015</span>
+      </div>
+      <div class="details">Conducted time and motion study under Merchandising Department's logistics warehouse to
+        evaluate staffing needs and improve work methods.</div>
+    </div>
+    <div class="edu-entry">
+      <div class="entry-header">
+        <span class="degree">VST ECS Phils., Inc. — Work Study Intern (72 hrs)</span>
+        <span class="dates">2015</span>
+      </div>
+      <div class="details">Created detailed documentation of the process flow in the provincial shipping section of the
+        warehouse for process standardization.</div>
+    </div>
+
+    <!-- Personal Projects -->
+    <h2>Personal Projects</h2>
+    <div class="project-item">
+      <h3>QueuePro: Industrial Queueing Simulator</h3>
+      <div class="tech">Queueing Theory · Discrete Event Simulation · Stochastic Modeling · SAAS</div>
+      <p>QueuePro is a professional Discrete Event Simulation (DES) SAAS platform designed for Process Engineers, Data Scientists, and Educators. Optimize your service floor, eliminate bottlenecks, and validate system capacity using rigorous stochastic modeling.</p>
+    </div>
+    <div class="project-item">
+      <h3>Room Reservation App for Local Church</h3>
+      <div class="tech">HTML · CSS · JavaScript · Google Apps Script</div>
+      <p>A room reservation application that automates the booking process for church rooms, allowing authorized users
+        to reserve rooms for specific time slots with double-booking prevention.</p>
+    </div>
+    <div class="project-item">
+      <h3>Brilliant.org Problem Solver</h3>
+      <div class="tech">Math · Statistics · Computer Science</div>
+      <p>Actively solving Math, Statistics, and Computer Science quizzes on Brilliant.org for continuous learning.</p>
+    </div>
+    <div class="project-item">
+      <h3>Personal Math Tutor</h3>
+      <div class="tech">Geometry · Trigonometry · Algebra · Pre-Calculus</div>
+      <p>Personal math tutoring for high school students.</p>
+    </div>
+    <div class="project-item">
+      <h3>Personal Interactive Resume</h3>
+      <div class="tech">HTML · CSS · JavaScript · GitHub Pages</div>
+      <p>A comprehensive, interactive web-based portfolio and resume hosted on GitHub Pages: <a href="https://cbanzaime23.github.io/Christian-sCV/" style="color: #2a6496; text-decoration: none;">View here</a>.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

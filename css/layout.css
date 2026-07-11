@@ -53,10 +53,9 @@
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 48px 24px;
-  scroll-margin-top: 52px;
-  position: relative;
 }
+scroll-margin-top: 52px;
+position: relative;
 
 .row {
   display: grid;
@@ -79,10 +78,21 @@
    Footer — Minimal
    ============================================ */
 footer {
-  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 16px auto 0 auto;
   padding: 32px 24px;
+  text-align: center;
   color: var(--text-light);
   font-size: var(--fs-caption);
   border-top: 1px solid var(--border);
-  margin-top: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Footer paragraph styling */
+footer p {
+  margin: 0.5rem 0;
+  text-align: center;
 }

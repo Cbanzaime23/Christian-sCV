@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="description"
     content="Christian Ibañez — Applied Research Scientist specializing in Operations Research, Mathematical Optimization, and Machine Learning. Experienced in LP/MIP formulations, queueing-theoretic modeling, and ML-driven decision systems.">
-  <meta name="keywords" content="Operations Research, Mathematical Optimization, Linear Programming, Queueing Theory, Machine Learning, Applied Research, Data Science, Python, Statistical Modeling">
+  <meta name="keywords"
+    content="Operations Research, Mathematical Optimization, Linear Programming, Queueing Theory, Machine Learning, Applied Research, Data Science, Python, Statistical Modeling">
   <meta name="author" content="Christian Ibañez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -23,16 +24,17 @@
 </head>
 
 <body>
+
   <!-- ================================
        STICKY NAVIGATION
        ================================ -->
   <nav class="site-nav" id="site-nav">
     <ul>
       <li><a href="#dhead">Home</a></li>
-      <li><a href="#research">Research</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#internships">Internships</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#courses">Courses</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -74,33 +76,9 @@
   </header>
 
   <!-- ================================
-       RESEARCH INTERESTS SECTION
-       ================================ -->
-  <section class="container" id="research">
-    <h2 class="section-title">Research Interests</h2>
-    <div class="desc">
-      <p>My research interests lie at the intersection of <strong>Operations Research</strong>,
-        <strong>Machine Learning</strong>, and <strong>Decision Science</strong> — with a focus on
-        formulating real-world business and operational challenges as tractable optimization problems.
-        I am particularly interested in:</p>
-      <ul>
-        <li><strong>Resource Optimization & Scheduling:</strong> Workforce capacity planning, staffing
-          allocation under uncertainty, and multi-objective scheduling formulations (LP/MIP)</li>
-        <li><strong>Queueing-Theoretic Modeling:</strong> Analytical and simulation-based approaches
-          to service system design and capacity dimensioning</li>
-        <li><strong>Explainable ML for Decision Systems:</strong> Interpretable predictive models
-          (SHAP/LIME) for high-stakes domains such as financial services, lending, and customer
-          retention</li>
-        <li><strong>AI-Driven Process Optimization:</strong> Integrating ML predictions with
-          prescriptive optimization to close the loop from insight to action</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ================================
        PROFESSIONAL EXPERIENCE SECTION
        ================================ -->
-  <section class="container" id="experience">
+  <section class="card container" id="experience">
     <h2 class="section-title">Professional Experience</h2>
 
     <!-- Sun Life -->
@@ -131,11 +109,12 @@
             extracts,
             parses, and shards Planview data for retrieval-augmented generation (RAG) for MS365 Copilot Agent
             and custom BMAD style persona Agent. This project automates the project status analysis and insights
-            generation for PMO Delivery Excellence Team</li>
+            generation for PMO Delivery Excellence Team at a Portfolio Level</li>
           <li><strong>PMO Project Status Compliance Analysis:</strong> Automated the entire weekly PMO project status
             compliance from data extraction, processing, AI analysis project status data to identify compliance, report
             creation to the stakeholders</li>
-          <li><strong>PCQA Automation:</strong> Lead the development of end to end automation of project artifacts
+          <li><strong>PCQA Automation:</strong> Worked with PCQA team for the development of end to end automation of
+            project artifacts
             audit. This projects includes 2 AI Agents (1 Agent for proactive checking of artifact completeness and the
             2nd Agent is for the project artifact audit) and a dashboard for the audit results</li>
           <li><strong>Batch Job Data Pipeline Orchestration:</strong> Engineered a Batch Job Data Pipeline Orchestration
@@ -187,8 +166,7 @@
             BFSI, and Travel accounts, achieving a **2-3% monthly attrition reduction**; integrated **SHAP/LIME
             explainable AI (XAI)** to generate personalized, feature-level coaching recommendations ("who to coach and
             what to coach") for team leaders, yielding **€2M+ in financially validated savings** in the Banking,
-            Financial Services & Insurance (BFSI) sector — directly relevant to lending risk reduction and customer
-            lifetime value optimization.</li>
+            Financial Services & Insurance (BFSI) sector.</li>
           <li><strong>Sales Retention Scoring Model:</strong> Engineered and deployed mutiple classification scoring
             model for different product category
             (utilizing **Python, XGBoost, and PyCaret/AutoML** for ensembling) for an Healthcare and Life Sciences
@@ -219,9 +197,10 @@
         Rockwell Business Centre - Pasig City
         <ul>
           <li><strong>Demand & FTE Capacity Optimization Model:</strong> Formulated a **Linear/Integer Programming
-            (LP/IP) optimization model** to minimize staffing overhead while satisfying SLA constraints under
+            (LP/IP) optimization model** to minimize staffing overhead while satisfying
             fluctuating demand; implemented the model in Excel Solver and engineered an interactive **VBA dashboard
-            interface** enabling operations managers to simulate staffing scenarios, input capacity buffers, and plot
+            interface** enabling operations Workforce Planners to simulate staffing scenarios, input capacity buffers,
+            and plot
             optimal schedules.</li>
           <li><strong>Productivity Report Digitization Project:</strong> Served as Lead Developer, engineering
             manually-triggered **Alteryx ETL workflows** to ingest, clean, and join data from 10+ disparate operational
@@ -243,6 +222,7 @@
             Learning & Development, and Risk & Quality (R&Q).</li>
           <li>Pioneered the Data Analytics and Visualization delivery team, establishing the first team to deliver
             chargeable VBA, Alteryx, and Power BI solutions across HK, SG, and AU regions.</li>
+          <li>Co-facilitated an internal <strong>Excel VBA Training</strong> for the Data Analytics and Visualization team, equipping teammates with macro programming skills to accelerate their own automation workflows and reinforce a culture of continuous upskilling.</li>
           <li>Promoted from Associate to Analyst role (2020) and transitioned from Contractual to FTE (2018).</li>
         </ul>
         <p><em>Trainings:</em></p>
@@ -258,7 +238,7 @@
   <!-- ================================
        INTERNSHIP SECTION
        ================================ -->
-  <section class="container" id="internships">
+  <section class="card container" id="internships">
     <h2 class="section-title">Internships</h2>
 
     <!-- Toyota -->
@@ -272,9 +252,8 @@
         <strong>Toyota Makati Inc.</strong>
         <p>Kaizen Intern (320 Hours)</p>
         <ul>
-          <li>Applied Toyota Business Practice framework, process mapping, and data analysis to improve Parts Department
-            warehouse operations.</li>
-          <li>Applied Kaizen and Lean Manufacturing principles to map processes, analyze data, and visualize
+          <li>Applied Toyota Business Practice framework, Kaizen and Lean Manufacturing principles to map processes,
+            analyze data, and visualize
             the root causes of problems in the Parts Department warehouse.</li>
         </ul>
       </div>
@@ -295,8 +274,6 @@
             staffing needs and their current method of work. Highlighted some considered non-value activities in the
             process and presented to the manager the output of the improved process versus the output of the current
             process.</li>
-          <li>Applied Kaizen and Lean Manufacturing principles to map processes, analyze data, and visualize
-            the root causes of problems in a Parts Department warehouse.</li>
         </ul>
       </div>
     </div>
@@ -322,7 +299,7 @@
   <!-- ================================
        EDUCATION SECTION
        ================================ -->
-  <section class="container" id="education">
+  <section class="card container" id="education">
     <h2 class="section-title">Education</h2>
 
     <!-- Masters -->
@@ -377,9 +354,34 @@
   </section>
 
   <!-- ================================
+       RESEARCH INTERESTS SECTION
+       ================================ -->
+  <section class="card container" id="research">
+    <h2 class="section-title">Research Interests</h2>
+    <div class="desc">
+      <p>My research interests lie at the intersection of <strong>Operations Research</strong>,
+        <strong>Machine Learning</strong>, and <strong>Decision Science</strong> — with a focus on
+        formulating real-world business and operational challenges as tractable optimization problems.
+        I am particularly interested in:
+      </p>
+      <ul>
+        <li><strong>Resource Optimization & Scheduling:</strong> Workforce capacity planning, staffing
+          allocation under uncertainty, and multi-objective scheduling formulations (LP/MIP)</li>
+        <li><strong>Queueing-Theoretic Modeling:</strong> Analytical and simulation-based approaches
+          to service system design and capacity dimensioning</li>
+        <li><strong>Explainable ML for Decision Systems:</strong> Interpretable predictive models
+          (SHAP/LIME) for high-stakes domains such as financial services and customer
+          retention</li>
+        <li><strong>AI-Driven Process Optimization:</strong> Integrating ML predictions with
+          prescriptive optimization to close the loop from insight to action</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================================
        COURSES & CERTIFICATIONS SECTION
        ================================ -->
-  <section class="container" id="courses">
+  <section class="card container" id="courses">
     <h2 class="section-title">Courses & Certifications</h2>
     <div class="course-list">
       <div class="course-group">
@@ -419,13 +421,14 @@
   <!-- ================================
        SKILLS SECTION
        ================================ -->
-  <section class="container" id="skills">
+  <section class="card container" id="skills">
     <h2 class="section-title">Skills</h2>
     <div class="skill-cards">
       <div class="skill-card">
-        <h3>Operations Research &amp; Optimization</h3>
+        <h3><span class="skill-icon">📐</span> Operations Research &amp; Optimization</h3>
         <ul>
-          <li>Mathematical Optimization: Linear Programming (LP), Mixed-Integer Programming (MIP), Constraint Programming</li>
+          <li>Mathematical Optimization: Linear Programming (LP), Mixed-Integer Programming (MIP), Constraint
+            Programming</li>
           <li>Optimization Modelling using MiniZinc, Excel Solver, R, Python</li>
           <li>Queueing Theory and Simulation (R, Python, Excel)</li>
           <li>Resource Allocation, Scheduling, and Capacity Planning</li>
@@ -434,12 +437,12 @@
         </ul>
       </div>
       <div class="skill-card">
-        <h3>Machine Learning &amp; Statistical Modeling</h3>
+        <h3><span class="skill-icon">🧠</span> Machine Learning &amp; Statistical Modeling</h3>
         <ul>
           <li>Regression &amp; Classification Modeling (Python, R)</li>
           <li>Predictive and Prescriptive Analysis</li>
           <li>Model Training and Evaluation</li>
-          <li>Forecasting and Time Series Analysis</li>
+          <li>Forecasting and Time Series Analysis (ARIMA, SARIMAX, Prophet)</li>
           <li>Survival Analysis</li>
           <li>Explainable AI (SHAP, LIME) for interpretable decision systems</li>
           <li>NLP &amp; Transformer Models (BERT via HuggingFace)</li>
@@ -449,7 +452,7 @@
         </ul>
       </div>
       <div class="skill-card">
-        <h3>Data Engineering &amp; ML Pipelines</h3>
+        <h3><span class="skill-icon">⚙️</span> Data Engineering &amp; ML Pipelines</h3>
         <ul>
           <li>Data Extraction using API, Database Systems and Web Scraping (Python)</li>
           <li>SQL Scripting &amp; Database Querying</li>
@@ -459,7 +462,7 @@
         </ul>
       </div>
       <div class="skill-card">
-        <h3>AI Agents &amp; Automation</h3>
+        <h3><span class="skill-icon">🤖</span> AI Agents &amp; Automation</h3>
         <ul>
           <li>RAG Pipeline Architecture and LLM Agent Development</li>
           <li>Using LLM for Workflow automation and data analysis</li>
@@ -470,7 +473,7 @@
         </ul>
       </div>
       <div class="skill-card">
-        <h3>Web Development</h3>
+        <h3><span class="skill-icon">🌐</span> Web Development</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -483,12 +486,25 @@
   <!-- ================================
        PERSONAL PROJECTS SECTION
        ================================ -->
-  <section class="container" id="projects">
+  <section class="card container" id="projects">
     <h2 class="section-title">Personal Projects</h2>
 
     <div class="project-list">
       <div class="project-block">
-        <h3>Room Reservation App for Church</h3>
+        <h3>QueuePro: Industrial Queueing Simulator</h3>
+        <div class="tech-stack">
+          <span class="tech-pill">Queueing Theory</span>
+          <span class="tech-pill">Discrete Event Simulation</span>
+          <span class="tech-pill">Stochastic Modeling</span>
+          <span class="tech-pill">SAAS</span>
+        </div>
+        <p>QueuePro is a professional Discrete Event Simulation (DES) SAAS platform designed for Process Engineers, Data
+          Scientists, and Educators. Optimize your service floor, eliminate bottlenecks, and validate system capacity
+          using rigorous stochastic modeling.</p>
+      </div>
+
+      <div class="project-block">
+        <h3>Room Reservation App for our local Church</h3>
         <div class="tech-stack">
           <span class="tech-pill">HTML</span>
           <span class="tech-pill">CSS</span>
@@ -498,7 +514,6 @@
         <p>A room reservation application that automates the booking process for church rooms, allowing authorized users
           to reserve rooms for specific time slots. The system prevents double bookings and maintains a log of all
           reservations.</p>
-        <a href="#" class="project-link">View on GitHub / Live Demo <span>&rarr;</span></a>
       </div>
 
       <div class="project-block">
@@ -509,18 +524,17 @@
           <span class="tech-pill">Computer Science</span>
         </div>
         <p>I answer Math, Statistics and Computer Science quizzes on Brilliant.org for fun and for practice.</p>
-        <a href="#" class="project-link">View on GitHub / Live Demo <span>&rarr;</span></a>
       </div>
 
       <div class="project-block">
         <h3>Personal Math Tutor</h3>
         <div class="tech-stack">
-          <span class="tech-pill">SQL</span>
-          <span class="tech-pill">Tableau</span>
+          <span class="tech-pill">Geometry</span>
+          <span class="tech-pill">Trigonometry</span>
+          <span class="tech-pill">Algebra</span>
+          <span class="tech-pill">Pre-Calculus</span>
         </div>
-        <p>Designed an interactive student performance tracking dashboard utilizing SQL to query learning databases and
-          Tableau to visualize progress trends, key retention metrics, and personalized math learning pathways.</p>
-        <a href="#" class="project-link">View on GitHub / Live Demo <span>&rarr;</span></a>
+        <p>I do personal math tutoring for high school students.</p>
       </div>
     </div>
   </section>
@@ -528,7 +542,7 @@
   <!-- ================================
        AWARDS & RECOGNITION SECTION
        ================================ -->
-  <section class="container" id="awards">
+  <section class="card container" id="awards">
     <h2 class="section-title">Awards & Achievements</h2>
     <div class="entry row">
       <div class="timespan">2023</div>
@@ -564,8 +578,8 @@
   <!-- ================================
        TALKS & SEMINARS SECTION
        ================================ -->
-  <section class="container" id="talks">
-    <h2 class="section-title">Research Talks, Academic Lectures & Panelist Roles</h2>
+  <section class="card container" id="talks">
+    <h2 class="section-title">Academic Talks & Panelist Roles</h2>
 
     <!-- 2025 -->
     <div class="talks-year-group">
@@ -649,8 +663,9 @@
         instruction.&rdquo;</em><br>
       &mdash; Proverbs 1:7 (NIV)</p>
     <p>&copy; 2026 Christian Ibañez &middot; Built with HTML &amp; CSS</p>
-    <p>Made possible by: Saved by Grace through faith in Jesus Christ</p>
+    <p>Saved by Grace through faith in Jesus Christ</p>
   </footer>
+
 </body>
 
 </html>

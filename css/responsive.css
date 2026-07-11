@@ -108,7 +108,8 @@
   }
 
   .ico img {
-    max-width: 48px;
+    width: 36px;
+    height: 36px;
     margin-left: 0;
   }
 
